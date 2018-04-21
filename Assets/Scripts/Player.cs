@@ -21,6 +21,8 @@ public class Player : MonoBehaviour {
     public Transform _rowC;
     public Transform _rowD;
 
+    public char row;
+
     public GameObject[] Bullets;
     private float _waitForNext = 0;
     public float shootTimer;
@@ -34,6 +36,7 @@ public class Player : MonoBehaviour {
     {
         _player = Get();
         transform.position = new Vector2(-4,_rowB.position.y);
+        row = 'B';
     }
 
     private void FixedUpdate()
@@ -94,18 +97,19 @@ public class Player : MonoBehaviour {
     private void UPdatePlayer()
     {
         #region Move Up
-        if (_keyUp())
+        if (_keyUp() && (_moveDown == false) && (transform.position.y != _rowA.position.y))
         {
             _moveUp = true;
         }
         //B to A
-        if (_moveUp && (transform.position.y >= _rowB.position.y && transform.position.y < _rowA.position.y))
+        if (_moveUp && (transform.position.y >= _rowB.position.y && transform.position.y < _rowA.position.y) )
         {
             transform.position = Vector2.MoveTowards(new Vector2(transform.position.x, transform.position.y), new Vector2(transform.position.x, _rowA.position.y), _step);
 
             if (transform.position.y == _rowA.position.y)
             {
                 _moveUp = false;
+                row = 'A';
             }
         }
         //C To B
@@ -116,6 +120,7 @@ public class Player : MonoBehaviour {
             if (transform.position.y == _rowB.position.y)
             {
                 _moveUp = false;
+                row = 'B';
             }
         }
         //D to C
@@ -126,13 +131,14 @@ public class Player : MonoBehaviour {
             if (transform.position.y == _rowC.position.y)
             {
                 _moveUp = false;
+                row = 'C';
             }
         }
 
         #endregion
 
         #region Move Down
-        if (_keyDown())
+        if (_keyDown() && (_moveUp == false) && (transform.position.y != _rowD.position.y))
         {
             _moveDown = true;
         }
@@ -144,6 +150,7 @@ public class Player : MonoBehaviour {
             if (transform.position.y == _rowD.position.y)
             {
                 _moveDown = false;
+                row = 'D';
             }
         }
         //B to C
@@ -154,6 +161,7 @@ public class Player : MonoBehaviour {
             if (transform.position.y == _rowC.position.y)
             {
                 _moveDown = false;
+                row = 'C';
             }
         }
         //A to B
@@ -164,6 +172,7 @@ public class Player : MonoBehaviour {
             if (transform.position.y == _rowB.position.y)
             {
                 _moveDown = false;
+                row = 'B';
             }
         }
         #endregion
