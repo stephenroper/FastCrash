@@ -8,19 +8,18 @@ public class Player : MonoBehaviour {
     private Player _player = null;
 
     public float speed;
-    public float yPos;
+    private float _step;
+    private bool _moveDown = false;
+    private bool _moveUp = false;
 
-    private bool _keyUp() { return (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)); }
-    private bool _keyDown() { return (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow)); }
+    private bool _keyUp() { return (Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.UpArrow)); }
+    private bool _keyDown() { return (Input.GetKeyUp(KeyCode.S) || Input.GetKeyUp(KeyCode.DownArrow)); }
     private bool _keyShoot() { return Input.GetKeyDown(KeyCode.Space); }
 
-    private float _outterRowY = 2.85f;
-    private float _secondRowY = 1.44f;
-    private float _middleRowY = 0f;
-
-    private float _firstLineY = 3.61f;
-    private float _secondLineY = 2.16f;
-    private float _thirdLineY = 0.71f;
+    public Transform _rowA;
+    public Transform _rowB;
+    public Transform _rowC;
+    public Transform _rowD;
 
     public GameObject[] Bullets;
     private float _waitForNext = 0;
@@ -34,53 +33,139 @@ public class Player : MonoBehaviour {
     private void Start()
     {
         _player = Get();
+        transform.position = new Vector2(-4,_rowB.position.y);
+    }
+
+    private void FixedUpdate()
+    {
+        
     }
 
     // Update is called once per frame
     void Update () {
-        UpdatePlayerMovement();
-
-        #region Re-align Player to Row
-        //realign Top row
-        if (transform.position.y < _firstLineY && transform.position.y > _secondLineY)
-        {
-            transform.position = new Vector3(transform.position.x, _outterRowY);
-        }
-        //realign Second top Row
-        if (transform.position.y < _secondLineY && transform.position.y > _thirdLineY)
-        {
-            transform.position = new Vector3(transform.position.x, _secondRowY);
-        }
-        //realign Middle Row
-        if (transform.position.y < _thirdLineY && transform.position.y > -_thirdLineY)
-        {
-            transform.position = new Vector3(transform.position.x, _middleRowY);
-        }
-        //realign Second bottom Row
-        if (transform.position.y > -_secondLineY && transform.position.y < -_thirdLineY)
-        {
-            transform.position = new Vector3(transform.position.x, -_secondRowY);
-        }
-        //realign Bottom row
-        if (transform.position.y > -_firstLineY && transform.position.y < -_secondLineY)
-        {
-            transform.position = new Vector3(transform.position.x, -_outterRowY);
-        }
-        #endregion
-
-        
+        _step = speed * Time.deltaTime;
+        UPdatePlayer();
     }
 
-    private void UpdatePlayerMovement()
+    private float DeterminePlayerPosition(Vector3 pos)
     {
-        //Player Movement Y
-        if (transform.position.y < _outterRowY && _keyUp())
+        if (_keyUp())
         {
-            transform.position = Vector2.MoveTowards(new Vector2(transform.position.x, transform.position.y), new Vector2(transform.position.x, transform.position.y + yPos), speed * Time.deltaTime);
+            if (pos.y == _rowA.position.y)
+            {
+                return _rowA.position.y;
+            }
+            if (pos.y == _rowB.position.y)
+            {
+                return _rowA.position.y;
+            }
+            if (pos.y == _rowC.position.y)
+            {
+                return _rowB.position.y;
+            }
+            if (pos.y ==  _rowD.position.y)
+            {
+                return _rowC.position.y;
+            }
         }
-        if (transform.position.y > -_outterRowY && _keyDown())
+
+        if (_keyDown())
         {
-            transform.position = Vector2.MoveTowards(new Vector2(transform.position.x, transform.position.y), new Vector2(transform.position.x, transform.position.y - yPos), speed * Time.deltaTime);
+            if (pos.y == _rowA.position.y)
+            {
+                return _rowB.position.y;
+            }
+            if (pos.y == _rowB.position.y)
+            {
+                return _rowC.position.y;
+            }
+            if (pos.y == _rowC.position.y)
+            {
+                return _rowD.position.y;
+            }
+            if (pos.y == _rowD.position.y)
+            {
+                return _rowD.position.y;
+            }
         }
+        return pos.y;
+    }
+
+    private void UPdatePlayer()
+    {
+        #region Move Up
+        if (_keyUp())
+        {
+            _moveUp = true;
+        }
+        //B to A
+        if (_moveUp && (transform.position.y >= _rowB.position.y && transform.position.y < _rowA.position.y))
+        {
+            transform.position = Vector2.MoveTowards(new Vector2(transform.position.x, transform.position.y), new Vector2(transform.position.x, _rowA.position.y), _step);
+
+            if (transform.position.y == _rowA.position.y)
+            {
+                _moveUp = false;
+            }
+        }
+        //C To B
+        if (_moveUp && (transform.position.y >= _rowC.position.y && transform.position.y < _rowB.position.y))
+        {
+            transform.position = Vector2.MoveTowards(new Vector2(transform.position.x, transform.position.y), new Vector2(transform.position.x, _rowB.position.y), _step);
+
+            if (transform.position.y == _rowB.position.y)
+            {
+                _moveUp = false;
+            }
+        }
+        //D to C
+        if (_moveUp && (transform.position.y >= _rowD.position.y && transform.position.y < _rowC.position.y))
+        {
+            transform.position = Vector2.MoveTowards(new Vector2(transform.position.x, transform.position.y), new Vector2(transform.position.x, _rowC.position.y), _step);
+
+            if (transform.position.y == _rowC.position.y)
+            {
+                _moveUp = false;
+            }
+        }
+
+        #endregion
+
+        #region Move Down
+        if (_keyDown())
+        {
+            _moveDown = true;
+        }
+        //C to D
+        if (_moveDown && (transform.position.y <= _rowC.position.y && transform.position.y > _rowD.position.y))
+        {
+            transform.position = Vector2.MoveTowards(new Vector2(transform.position.x, transform.position.y), new Vector2(transform.position.x, _rowD.position.y), _step);
+
+            if (transform.position.y == _rowD.position.y)
+            {
+                _moveDown = false;
+            }
+        }
+        //B to C
+        if (_moveDown && (transform.position.y <= _rowB.position.y && transform.position.y > _rowC.position.y))
+        {
+            transform.position = Vector2.MoveTowards(new Vector2(transform.position.x, transform.position.y), new Vector2(transform.position.x, _rowC.position.y), _step);
+
+            if (transform.position.y == _rowC.position.y)
+            {
+                _moveDown = false;
+            }
+        }
+        //A to B
+        if (_moveDown && (transform.position.y <= _rowA.position.y && transform.position.y > _rowB.position.y))
+        {
+            transform.position = Vector2.MoveTowards(new Vector2(transform.position.x, transform.position.y), new Vector2(transform.position.x, _rowB.position.y), _step);
+
+            if (transform.position.y == _rowB.position.y)
+            {
+                _moveDown = false;
+            }
+        }
+        #endregion
     }
 }
