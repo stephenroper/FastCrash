@@ -1,11 +1,13 @@
 ﻿using UnityEngine;
 
-public class Bullet : MonoBehaviour {
+public class RockMovement : MonoBehaviour {
+
     public float Speed;
-	// Update is called once per frame
-	void Update () {
-        transform.Translate(Vector2.right * Time.deltaTime * Speed);
-	}
+    // Update is called once per frame
+    void Update()
+    {
+        transform.Translate(Vector2.left * Speed * Time.deltaTime );
+    }
 
     private void OnBecameInvisible()
     {
@@ -14,7 +16,7 @@ public class Bullet : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Rock")
+        if (collision.gameObject.tag == "Bullet")
         {
             gameObject.SetActive(false);
         }

@@ -1,10 +1,14 @@
-﻿using System.Collections.Generic;
+﻿using Assets.Scripts;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Player : MonoBehaviour {
 
     private static Player Singleton;
     static public Player Get() { return Singleton; }
+    public Transform _playerTransform;
+
+    private Tools _tools;
 
     private Player _player = null;
 
@@ -23,7 +27,7 @@ public class Player : MonoBehaviour {
     public Transform _rowC;
     public Transform _rowD;
 
-    public char row;
+    public char Row;
 
     //Bullet Pool
     public GameObject[] Bullets;
@@ -40,8 +44,10 @@ public class Player : MonoBehaviour {
 
     private void Start()
     {
+        _playerTransform = GetComponent<Transform>();
+        _tools = new Tools();
         transform.position = new Vector2(-4,_rowB.position.y);
-        row = 'B';
+        Row = 'B';
 
         //Instantiate the BUllet pool at the begining of the lvl
         _bulletPool = new List<GameObject>();
@@ -62,55 +68,18 @@ public class Player : MonoBehaviour {
     void Update () {
         _step = VerticalSpeed * Time.deltaTime;
         UPdatePlayer();
+
+        //Set active BUllet and Fire.
         if (_keyShoot() && (Time.time > _nextFire))
         {
             _nextFire = Time.time + FireRate;
-            SpawnBullet();
+            _tools.SpawnObjFromPool(_bulletPool, _playerTransform);
         }
     }
 
-    private float DeterminePlayerPosition(Vector3 pos)
+    public string DeterminePlayerPosition(Vector3 pos)
     {
-        if (_keyUp())
-        {
-            if (pos.y == _rowA.position.y)
-            {
-                return _rowA.position.y;
-            }
-            if (pos.y == _rowB.position.y)
-            {
-                return _rowA.position.y;
-            }
-            if (pos.y == _rowC.position.y)
-            {
-                return _rowB.position.y;
-            }
-            if (pos.y ==  _rowD.position.y)
-            {
-                return _rowC.position.y;
-            }
-        }
-
-        if (_keyDown())
-        {
-            if (pos.y == _rowA.position.y)
-            {
-                return _rowB.position.y;
-            }
-            if (pos.y == _rowB.position.y)
-            {
-                return _rowC.position.y;
-            }
-            if (pos.y == _rowC.position.y)
-            {
-                return _rowD.position.y;
-            }
-            if (pos.y == _rowD.position.y)
-            {
-                return _rowD.position.y;
-            }
-        }
-        return pos.y;
+        return null;
     }
 
     private void UPdatePlayer()
@@ -128,7 +97,7 @@ public class Player : MonoBehaviour {
             if (transform.position.y == _rowA.position.y)
             {
                 _moveUp = false;
-                row = 'A';
+                Row = 'A';
             }
         }
         //C To B
@@ -139,7 +108,7 @@ public class Player : MonoBehaviour {
             if (transform.position.y == _rowB.position.y)
             {
                 _moveUp = false;
-                row = 'B';
+                Row = 'B';
             }
         }
         //D to C
@@ -150,7 +119,7 @@ public class Player : MonoBehaviour {
             if (transform.position.y == _rowC.position.y)
             {
                 _moveUp = false;
-                row = 'C';
+                Row = 'C';
             }
         }
         #endregion
@@ -168,7 +137,7 @@ public class Player : MonoBehaviour {
             if (transform.position.y == _rowD.position.y)
             {
                 _moveDown = false;
-                row = 'D';
+                Row = 'D';
             }
         }
         //B to C
@@ -179,7 +148,7 @@ public class Player : MonoBehaviour {
             if (transform.position.y == _rowC.position.y)
             {
                 _moveDown = false;
-                row = 'C';
+                Row = 'C';
             }
         }
         //A to B
@@ -190,42 +159,13 @@ public class Player : MonoBehaviour {
             if (transform.position.y == _rowB.position.y)
             {
                 _moveDown = false;
-                row = 'B';
+                Row = 'B';
             }
         }
         #endregion
 
         #region Move Left and Right
-        var speed = Input.GetAxisRaw("Horizontal");
-        speed = speed * Time.deltaTime * HorizontalSpeed;
-        transform.Translate(speed, 0, 0);
+        transform.Translate(-Vector3.left * Input.GetAxis("Horizontal") * HorizontalSpeed * Time.deltaTime);
         #endregion
-    }
-
-    public void SpawnBullet()
-    {
-        if (_bulletPool != null)
-        {
-            GameObject obj = GetPooledObject(_bulletPool);
-            if (obj != null)
-            {
-                //Activate Pooled Bullet
-                var pos = new Vector2(transform.position.x, transform.position.y);
-                obj.transform.position = pos;
-                obj.SetActive(true);
-            }
-        }
-    }
-
-    public GameObject GetPooledObject(List<GameObject> objectPool)
-    {
-        for (int i = 0; i < objectPool.Count; i++)
-        {
-            if (!objectPool[i].activeInHierarchy)
-            {
-                return objectPool[i];
-            }
-        }
-        return null;
     }
 }
