@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class AudioControllerStory : MonoBehaviour {
 
@@ -55,7 +56,7 @@ public class AudioControllerStory : MonoBehaviour {
         Debug.Log("Entered Coroutine.");
         yield return new WaitForSeconds(4.5f);
         Debug.Log("Loading Scene");
-        //SceneManager.LoadScene("StoryScene");
+        SceneManager.LoadScene("JTest");
     }
 
     public static IEnumerator FadeOut(AudioSource audioSource, float FadeTime)
