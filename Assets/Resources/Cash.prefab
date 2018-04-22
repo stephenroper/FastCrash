@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 61741400538560326}
   - component: {fileID: 50384384995505974}
   - component: {fileID: 212781660633859062}
+  - component: {fileID: 114594816005706460}
   m_Layer: 0
   m_Name: Cash
   m_TagString: Cash
@@ -87,6 +88,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.636302, y: 0.7499571}
   m_EdgeRadius: 0
+--- !u!114 &114594816005706460
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1765260874664516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a75c891ae3f77e841b912b51aac552c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Speed: 2
 --- !u!212 &212781660633859062
 SpriteRenderer:
   m_ObjectHideFlags: 1

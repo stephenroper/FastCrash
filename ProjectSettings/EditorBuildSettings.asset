@@ -11,3 +11,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Story.unity
     guid: a57d1d8b5a61752409a852bd4eb52799
+  - enabled: 1
+    path: Assets/Scenes/JTest.unity
+    guid: 9b78ae5d414b02440b91b1cf5feb1065
