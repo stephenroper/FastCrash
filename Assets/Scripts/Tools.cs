@@ -24,7 +24,7 @@ namespace Assets.Scripts
                 GameObject obj = GetPooledObject(objPool);
                 if (obj != null)
                 {
-                    //Activate Pooled Bullet
+                    //Activate Pooled Obj
                     var pos = new Vector2(transform.position.x, transform.position.y);
                     obj.transform.position = pos;
                     obj.SetActive(true);
@@ -44,6 +44,34 @@ namespace Assets.Scripts
                     gameObj.SetActive(true);
                 }
             }
+        }
+
+        public void SpawnObjFromPoolRandomRocks(List<GameObject> objPool, Transform transform)
+        {
+            if (objPool != null)
+            {
+                GameObject gameObj = objPool[Random.Range(0, objPool.Count)];
+
+                if (!gameObj.activeInHierarchy)
+                {
+                    if (gameObj.tag == "Cash")
+                    {
+                        var cashVisible = GameObject.FindGameObjectsWithTag("Cash");
+                        if (cashVisible.Length < 2)
+                        {
+                            InstantiateObject(gameObj, transform);
+                        }
+                    }
+                    InstantiateObject(gameObj, transform);
+                }
+            }
+        }
+
+        private void InstantiateObject(GameObject gameObj, Transform transform)
+        {
+            var pos = new Vector2(transform.position.x, transform.position.y);
+            gameObj.transform.position = pos;
+            gameObj.SetActive(true);
         }
     }
 }

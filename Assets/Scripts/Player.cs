@@ -17,6 +17,8 @@ public class Player : MonoBehaviour {
     private float _step;
     private bool _moveDown = false;
     private bool _moveUp = false;
+    private float _leftStop = -4.05f;
+    private float _rightStop = 3.83f;
 
     private bool _keyUp() { return (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow)); }
     private bool _keyDown() { return (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow)); }
@@ -33,6 +35,9 @@ public class Player : MonoBehaviour {
 
     public char Row;
 
+    [SerializeField]
+    private TextMesh _scoreGui = null;
+
     //Bullet Pool
     public GameObject[] Bullets;
     private List<GameObject> _bulletPool;
@@ -41,6 +46,21 @@ public class Player : MonoBehaviour {
     public float FireRate;
     private float _nextFire;
 
+    //Scoring Stuff
+    private int _score = 100;
+    public int GetScore()
+    {
+        return _score;
+    }
+    public void PickUpCash()
+    {
+        _score += 100;
+    }
+    public void FireLaserCash()
+    {
+        _score -= 25;
+    }
+
     public void Awake()
     {
         Singleton = this;
@@ -48,6 +68,7 @@ public class Player : MonoBehaviour {
 
     private void Start()
     {
+        _score = 100;
         _playerTransform = GetComponent<Transform>();
         _tools = new Tools();
         transform.position = new Vector2(-4,_rowB.position.y);
@@ -68,19 +89,30 @@ public class Player : MonoBehaviour {
         _player = Player.Get();
     }
 
+    private void FixedUpdate()
+    {
+        _scoreGui.text = _score.ToString();
+    }
+
     // Update is called once per frame
     void Update () {
         _step = VerticalSpeed * Time.deltaTime;
         UPdatePlayer();
 
         //Set active BUllet and Fire.
-        if (_keyShoot() && (Time.time > _nextFire))
+        if (_keyShoot() && (Time.time > _nextFire) && _score >= 25)
         {
             _nextFire = Time.time + FireRate;
             _tools.SpawnObjFromPool(_bulletPool, _playerTransform);
+            FireLaserCash();
         }
 
         DeterminePlayerPosition();
+
+        if (_score <= 0)
+        {
+            _score = 0;
+        }
     }
 
     public void DeterminePlayerPosition()
@@ -180,7 +212,23 @@ public class Player : MonoBehaviour {
         #endregion
 
         #region Move Left and Right
+        if (transform.position.x <= _leftStop)
+        {
+            _playerTransform.position = new Vector2(_leftStop, _playerTransform.position.y);
+        }
+        if (transform.position.x >= _rightStop)
+        {
+            _playerTransform.position = new Vector2(_rightStop, _playerTransform.position.y);
+        }
         transform.Translate(-Vector3.left * Input.GetAxis("Horizontal") * HorizontalSpeed * Time.deltaTime);
         #endregion
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Cash")
+        {
+            PickUpCash();
+        }
     }
 }

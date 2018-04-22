@@ -41,7 +41,7 @@ public class RockSpawner : MonoBehaviour {
         CountDown -= Time.deltaTime;
         if (CountDown <= 0)
         {
-            _tools.SpawnObjFromPoolRandom(_rockPool,_spawnerTransform);
+            _tools.SpawnObjFromPoolRandomRocks(_rockPool,_spawnerTransform);
             CountDown = Random.Range(1, WaitForNextMax);
         }
 	}
