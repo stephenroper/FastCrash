@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class AudioControllerTitle : MonoBehaviour {
 
@@ -54,7 +55,7 @@ public class AudioControllerTitle : MonoBehaviour {
         Debug.Log("Entered Coroutine.");
         yield return new WaitForSeconds(3f);
         Debug.Log("Loading Scene");
-        //SceneManager.LoadScene("StoryScene");
+        SceneManager.LoadScene("Story");
     }
 
 }
