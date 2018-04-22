@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AudioController : MonoBehaviour {
 
-
+    public AudioSource drivingMusic;
     public AudioSource shoot1;
     public AudioSource shoot2;
     public AudioSource shoot3;
@@ -13,6 +13,10 @@ public class AudioController : MonoBehaviour {
     public AudioSource correct;
     public AudioSource incorrect;
 
+    private float _startVolume;
+    private float _rng;
+
+    private bool _space() {return Input.GetKeyDown(KeyCode.Space); }
 
     void Awake ()
     {
@@ -24,15 +28,50 @@ public class AudioController : MonoBehaviour {
         crash = audio[4];
         correct = audio[5];
         incorrect = audio[6];
+        drivingMusic = audio[7];
+
+        _startVolume = 0.2f;
+        drivingMusic.volume = 0.2f;
+        StartVolume();
+        drivingMusic.loop = true;
     }
 
     // Use this for initialization
     void Start () {
-        shoot1.Play();
+        //drivingMusic.Play();
 	}
 	
 	// Update is called once per frame
 	void Update () {
+
+        //if (_space())
+        //{
+        //    _rng = Random.Range(1, 100);
+        //    Debug.Log(_rng);
+
+        //    if (_rng > 50)
+        //    {
+        //        shoot1.Play();
+        //    }
+        //    else
+        //    {
+        //        shoot3.Play();
+        //    }
+
+        //}
 		
 	}
+
+    private void StartVolume()
+    {
+        shoot1.volume = _startVolume;
+        shoot2.volume = _startVolume;
+        shoot3.volume =  _startVolume;
+        hitEnemy.volume =  _startVolume;
+        crash.volume = _startVolume;
+        correct.volume =  _startVolume;
+        incorrect.volume = _startVolume;
+        drivingMusic.volume = _startVolume;
+
+    }
 }
