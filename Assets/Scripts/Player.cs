@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 
 public class Player : MonoBehaviour {
 
@@ -7,13 +8,14 @@ public class Player : MonoBehaviour {
 
     private Player _player = null;
 
-    public float speed;
+    public float HorizontalSpeed;
+    public float VerticalSpeed;
     private float _step;
     private bool _moveDown = false;
     private bool _moveUp = false;
 
-    private bool _keyUp() { return (Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.UpArrow)); }
-    private bool _keyDown() { return (Input.GetKeyUp(KeyCode.S) || Input.GetKeyUp(KeyCode.DownArrow)); }
+    private bool _keyUp() { return (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow)); }
+    private bool _keyDown() { return (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow)); }
     private bool _keyShoot() { return Input.GetKeyDown(KeyCode.Space); }
 
     public Transform _rowA;
@@ -23,9 +25,13 @@ public class Player : MonoBehaviour {
 
     public char row;
 
+    //Bullet Pool
     public GameObject[] Bullets;
-    private float _waitForNext = 0;
-    public float shootTimer;
+    private List<GameObject> _bulletPool;
+    public int bulletAmount = 100;
+
+    public float FireRate;
+    private float _nextFire;
 
     public void Awake()
     {
@@ -34,20 +40,33 @@ public class Player : MonoBehaviour {
 
     private void Start()
     {
-        _player = Get();
         transform.position = new Vector2(-4,_rowB.position.y);
         row = 'B';
-    }
 
-    private void FixedUpdate()
-    {
-        
+        //Instantiate the BUllet pool at the begining of the lvl
+        _bulletPool = new List<GameObject>();
+        foreach (var bullet in Bullets)
+        {
+            for (int i = 0; i < bulletAmount; i++)
+            {
+                GameObject obj = Instantiate(bullet);
+                obj.SetActive(false);
+                _bulletPool.Add(obj);
+            }
+        }
+
+        _player = Player.Get();
     }
 
     // Update is called once per frame
     void Update () {
-        _step = speed * Time.deltaTime;
+        _step = VerticalSpeed * Time.deltaTime;
         UPdatePlayer();
+        if (_keyShoot() && (Time.time > _nextFire))
+        {
+            _nextFire = Time.time + FireRate;
+            SpawnBullet();
+        }
     }
 
     private float DeterminePlayerPosition(Vector3 pos)
@@ -134,7 +153,6 @@ public class Player : MonoBehaviour {
                 row = 'C';
             }
         }
-
         #endregion
 
         #region Move Down
@@ -176,5 +194,39 @@ public class Player : MonoBehaviour {
             }
         }
         #endregion
+
+        #region Move Left and Right
+        var speed = Input.GetAxisRaw("Horizontal");
+        speed = speed * Time.deltaTime * HorizontalSpeed;
+        transform.Translate(speed, 0, 0);
+        #endregion
+    }
+
+    public void SpawnBullet()
+    {
+        if (_bulletPool != null)
+        {
+            GameObject obj = GetPooledObject();
+            if (obj != null)
+            {
+                //Activate Pooled Bullet
+                var pos = new Vector2(transform.position.x, transform.position.y);
+                obj.transform.position = pos;
+                obj.SetActive(true);
+            }
+        }
+    }
+
+    public GameObject GetPooledObject()
+    {
+        if (_bulletPool != null)
+        {
+            GameObject gameObj = _bulletPool[Random.Range(0, _bulletPool.Count)];
+            if (!gameObj.activeInHierarchy)
+            {
+                return gameObj;
+            }
+        }
+        return null;
     }
 }
