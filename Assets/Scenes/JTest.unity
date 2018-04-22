@@ -207,8 +207,8 @@ MonoBehaviour:
   row: 0
   Bullets:
   - {fileID: 1605175091660122, guid: c705e0adf27bbac4db39fba7b2a132e0, type: 2}
-  bulletAmount: 10
-  FireRate: 1
+  bulletAmount: 4
+  FireRate: 0.5
 --- !u!1 &137256638
 GameObject:
   m_ObjectHideFlags: 0

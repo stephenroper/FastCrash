@@ -206,7 +206,7 @@ public class Player : MonoBehaviour {
     {
         if (_bulletPool != null)
         {
-            GameObject obj = GetPooledObject();
+            GameObject obj = GetPooledObject(_bulletPool);
             if (obj != null)
             {
                 //Activate Pooled Bullet
@@ -217,14 +217,13 @@ public class Player : MonoBehaviour {
         }
     }
 
-    public GameObject GetPooledObject()
+    public GameObject GetPooledObject(List<GameObject> objectPool)
     {
-        if (_bulletPool != null)
+        for (int i = 0; i < objectPool.Count; i++)
         {
-            GameObject gameObj = _bulletPool[Random.Range(0, _bulletPool.Count)];
-            if (!gameObj.activeInHierarchy)
+            if (!objectPool[i].activeInHierarchy)
             {
-                return gameObj;
+                return objectPool[i];
             }
         }
         return null;
