@@ -5,6 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class AudioControllerTitle : MonoBehaviour {
 
+
+    public GameObject zmLogo;
+
     public AudioSource titleMusic;
     public AudioSource select;
 
@@ -16,11 +19,12 @@ public class AudioControllerTitle : MonoBehaviour {
 
     void Awake ()
     {
+        zmLogo = GameObject.Find("LOGOzmgames");
         AudioSource[] audio = GetComponents<AudioSource>();
         titleMusic = audio[0];
         select = audio[1];
 
-        _select = false;
+        _select = true;
         StartVolume();
     }
 
@@ -28,8 +32,10 @@ public class AudioControllerTitle : MonoBehaviour {
     void Start () {
 
         titleMusic.Play();
-		
-	}
+        StartCoroutine(WaitToProgress());
+        //StartCoroutine(DestroyZMLogo());
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -50,6 +56,12 @@ public class AudioControllerTitle : MonoBehaviour {
         select.volume = _startVolume;
     }
 
+    IEnumerator WaitToProgress()
+    {
+        yield return new WaitForSeconds(8.6f);
+        _select = false;
+    }
+
     IEnumerator WaitForNextScene()
     {
         Debug.Log("Entered Coroutine.");
@@ -57,5 +69,13 @@ public class AudioControllerTitle : MonoBehaviour {
         Debug.Log("Loading Scene");
         SceneManager.LoadScene("Story");
     }
+
+    //IEnumerator DestroyZMLogo()
+    //{
+    //    yield return new WaitForSeconds(5.8f);
+
+    //    zmLogo.SetActive(false);
+    //    //GameObject.Destroy(zmLogo);
+    //}
 
 }
