@@ -9,6 +9,7 @@ public class RockSpawner : MonoBehaviour {
     //Rock Pools and Amounts
     private List<GameObject> _rockPool;
     public int RockAmountTotal;
+    public int cashAmountTotal;
 
     //Time to Spawn Rocks
     public float WaitForNextMax;
@@ -24,20 +25,35 @@ public class RockSpawner : MonoBehaviour {
 	void Start () {
         _spawnerTransform = GetComponent<Transform>();
         _tools = new Tools();
+
+        #region Cash And Rock Object Creation to pool List
         _rockPool = new List<GameObject>();
         foreach (var rock in Rocks)
         {
-            for (int i = 0; i < RockAmountTotal; i++)
+            if (rock.tag == "Cash")
             {
-                GameObject obj = Instantiate(rock);
-                obj.SetActive(false);
-                _rockPool.Add(obj);
+                for (int i = 0; i < cashAmountTotal; i++)
+                {
+                    GameObject obj = Instantiate(rock);
+                    obj.SetActive(false);
+                    _rockPool.Add(obj);
+                }
+            }
+            if (rock.tag == "Rock")
+            {
+                for (int i = 0; i < RockAmountTotal; i++)
+                {
+                    GameObject obj = Instantiate(rock);
+                    obj.SetActive(false);
+                    _rockPool.Add(obj);
+                }
             }
         }
-	}
-	
-	// Update is called once per frame
-	void Update () {
+        #endregion
+    }
+
+    // Update is called once per frame
+    void Update () {
         CountDown -= Time.deltaTime;
         if (CountDown <= 0)
         {

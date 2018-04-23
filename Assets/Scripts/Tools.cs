@@ -5,18 +5,6 @@ namespace Assets.Scripts
 {
     public class Tools
     {
-        private GameObject GetPooledObject(List<GameObject> objectPool)
-        {
-            for (int i = 0; i < objectPool.Count; i++)
-            {
-                if (!objectPool[i].activeInHierarchy)
-                {
-                    return objectPool[i];
-                }
-            }
-            return null;
-        }
-
         public void SpawnObjFromPool(List<GameObject> objPool, Transform transform)
         {
             if (objPool != null)
@@ -24,10 +12,7 @@ namespace Assets.Scripts
                 GameObject obj = GetPooledObject(objPool);
                 if (obj != null)
                 {
-                    //Activate Pooled Obj
-                    var pos = new Vector2(transform.position.x, transform.position.y);
-                    obj.transform.position = pos;
-                    obj.SetActive(true);
+                    InstantiateObject(obj, transform);
                 }
             }
         }
@@ -39,11 +24,21 @@ namespace Assets.Scripts
                 GameObject gameObj = objPool[Random.Range(0, objPool.Count)];
                 if (!gameObj.activeInHierarchy)
                 {
-                    var pos = new Vector2(transform.position.x, transform.position.y);
-                    gameObj.transform.position = pos;
-                    gameObj.SetActive(true);
+                    InstantiateObject(gameObj, transform);
                 }
             }
+        }
+
+        public int? SpawnObjFromPoolRandomGetRangeValue(List<GameObject> objPool, Transform transform)
+        {
+            if (objPool != null)
+            {
+                var randRange = Random.Range(0, objPool.Count);
+                GameObject gameObj = objPool[randRange];
+                InstantiateObject(gameObj, transform);
+                return randRange;
+            }
+            return null;
         }
 
         public void SpawnObjFromPoolRandomRocks(List<GameObject> objPool, Transform transform)
@@ -51,20 +46,37 @@ namespace Assets.Scripts
             if (objPool != null)
             {
                 GameObject gameObj = objPool[Random.Range(0, objPool.Count)];
-
-                if (!gameObj.activeInHierarchy)
+                if (gameObj.tag == "Rock")
                 {
-                    if (gameObj.tag == "Cash")
+                    if (!gameObj.activeInHierarchy)
+                    {
+                        InstantiateObject(gameObj, transform);
+                    }
+                }
+                if (gameObj.tag == "Cash")
+                {
+                    if (!gameObj.activeInHierarchy)
                     {
                         var cashVisible = GameObject.FindGameObjectsWithTag("Cash");
-                        if (cashVisible.Length < 2)
+                        if (cashVisible.Length <= 1)
                         {
                             InstantiateObject(gameObj, transform);
                         }
-                    }
-                    InstantiateObject(gameObj, transform);
+                    } 
                 }
             }
+        }
+
+        private GameObject GetPooledObject(List<GameObject> objectPool)
+        {
+            for (int i = 0; i < objectPool.Count; i++)
+            {
+                if (!objectPool[i].activeInHierarchy)
+                {
+                    return objectPool[i];
+                }
+            }
+            return null;
         }
 
         private void InstantiateObject(GameObject gameObj, Transform transform)

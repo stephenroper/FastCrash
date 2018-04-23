@@ -34,7 +34,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1014660835632036}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.08513, y: -1.392, z: -0.02896291}
+  m_LocalPosition: {x: 4.08513, y: -4.47, z: -0.02896291}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -56,5 +56,6 @@ MonoBehaviour:
   - {fileID: 1765260874664516, guid: 60e48d63ed6a5154f9d53387ccd9efd5, type: 2}
   - {fileID: 1765260874664516, guid: e3b07b846cb8ed54a96a70fc495d23c1, type: 2}
   RockAmountTotal: 4
+  cashAmountTotal: 1
   WaitForNextMax: 5
   CountDown: 0

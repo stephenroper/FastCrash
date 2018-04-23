@@ -60,6 +60,14 @@ public class Player : MonoBehaviour {
     {
         _score -= 25;
     }
+    public void AnswerCorrent()
+    {
+        _score += 200;
+    }
+    public void AnswerWrong()
+    {
+        _score -= 200;
+    }
 
     public void Awake()
     {
