@@ -24,6 +24,7 @@ public class AudioControllerTitle : MonoBehaviour {
         titleMusic = audio[0];
         select = audio[1];
 
+        titleMusic.loop = true;
         _select = true;
         StartVolume();
     }
@@ -32,6 +33,7 @@ public class AudioControllerTitle : MonoBehaviour {
     void Start () {
 
         titleMusic.Play();
+
         StartCoroutine(WaitToProgress());
         //StartCoroutine(DestroyZMLogo());
 
