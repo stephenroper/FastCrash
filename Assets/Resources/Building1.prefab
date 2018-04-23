@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 114485429557489666}
   m_Layer: 0
   m_Name: Building1
-  m_TagString: Untagged
+  m_TagString: Building1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36,7 +36,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1059279127426968}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.84, y: 0.31, z: -18.884766}
+  m_LocalPosition: {x: -9.84, y: 0.31, z: 25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -51,7 +51,7 @@ Animator:
   m_GameObject: {fileID: 1059279127426968}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: da4cbfc1fbdf9ee488384cb27f49567d, type: 2}
+  m_Controller: {fileID: 9100000, guid: 46e85c79c864556438e131b450c49060, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -102,10 +102,10 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 2023870769
+  m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300004, guid: 5db29fffb3b21154b902d65ae47e8902, type: 3}
+  m_Sprite: {fileID: 21300002, guid: b352c9db758b67c4fb2dca150ec6c6b0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

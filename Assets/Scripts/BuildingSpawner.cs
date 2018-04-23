@@ -14,12 +14,8 @@ public class BuildingSpawner : MonoBehaviour {
 
     private Transform _spawnerTransform;
 
-    private Tools _tools;
-
-
 	// Use this for initialization
 	void Start () {
-        _tools = new Tools();
         _spawnerTransform = GetComponent<Transform>();
         _buildingPool = new List<GameObject>();
         foreach (var building in Buildings)
@@ -38,8 +34,35 @@ public class BuildingSpawner : MonoBehaviour {
         CountDown -= Time.deltaTime;
         if (CountDown <= 0)
         {
-            _tools.SpawnObjFromPoolRandom(_buildingPool, _spawnerTransform);
+            SpawnObjFromPoolRandom(_buildingPool, _spawnerTransform);
             CountDown = Random.Range(1, WaitForNextMax);
         }
 	}
+
+    private void SpawnObjFromPoolRandom(List<GameObject> objPool, Transform transform)
+    {
+        if (objPool != null)
+        {
+            GameObject gameObj = objPool[Random.Range(0, objPool.Count)];
+            if (!gameObj.activeInHierarchy)
+            {
+                InstantiateObject(gameObj, transform);
+            }
+        }
+    }
+    private void InstantiateObject(GameObject gameObj, Transform transform)
+    {
+        Vector2 pos;
+        if (gameObj.tag == "Building1")
+        {
+            pos = new Vector2(transform.position.x, transform.position.y + 1.65f);
+        }
+        else
+        {
+            pos = new Vector2(transform.position.x, transform.position.y);
+        }
+        
+        gameObj.transform.position = pos;
+        gameObj.SetActive(true);
+    }
 }
