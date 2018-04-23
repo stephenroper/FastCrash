@@ -236,17 +236,16 @@ public class Player : MonoBehaviour {
         //Animations
         if (_keyDown())
         {
-            _anim.Play("PlayerMoveDown_000");
+            _anim.Play("PlayerDown");
         }
         else if (_keyUp())
         {
-            _anim.Play("Player-MoveUp_000");
+            _anim.Play("PlayerUp");
         }
         else
         {
-            _anim.Play("Player-Normal_000");
+            _anim.Play("PlayerIdle");
         }
-        
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

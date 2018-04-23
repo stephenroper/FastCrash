@@ -59,10 +59,10 @@ public class TriviaSpawner : MonoBehaviour {
         _timerGui.text = Mathf.Round(questionTimer).ToString();
         _questionOutOfText.text = _questionOutOf.ToString();
 
-        if (CountDown <= 0 && questionPool.Count != 0)
+        if (CountDown <= 0 && questionPool.Count != 0 && _questionOutOf <= 10)
         {
-            questionNum = _tools.SpawnObjFromPoolRandomGetRangeValue(questionPool, _spawnerTransform);
             _questionOutOf += 1;
+            questionNum = _tools.SpawnObjFromPoolRandomGetRangeValue(questionPool, _spawnerTransform);           
             CountDown = WaitForNextMax;
         }
         if (questionTimer <= 0)
@@ -119,6 +119,138 @@ public class TriviaSpawner : MonoBehaviour {
                 } 
             }
             if (question == 3)
+            {
+                var row = Player.Get().Row;
+                if (row != 'B')
+                {
+                    Player.Get().AnswerWrong();
+                }
+                else
+                {
+                    Player.Get().AnswerCorrent();
+                }
+            }
+            if (question == 4)
+            {
+                var row = Player.Get().Row;
+                if (row != 'C')
+                {
+                    Player.Get().AnswerWrong();
+                }
+                else
+                {
+                    Player.Get().AnswerCorrent();
+                }
+            }
+            if (question == 5)
+            {
+                var row = Player.Get().Row;
+                if (row != 'B')
+                {
+                    Player.Get().AnswerWrong();
+                }
+                else
+                {
+                    Player.Get().AnswerCorrent();
+                }
+            }
+            if (question == 6)
+            {
+                var row = Player.Get().Row;
+                if (row != 'C')
+                {
+                    Player.Get().AnswerWrong();
+                }
+                else
+                {
+                    Player.Get().AnswerCorrent();
+                }
+            }
+            if (question == 7)
+            {
+                var row = Player.Get().Row;
+                if (row != 'A')
+                {
+                    Player.Get().AnswerWrong();
+                }
+                else
+                {
+                    Player.Get().AnswerCorrent();
+                }
+            }
+            if (question == 8)
+            {
+                var row = Player.Get().Row;
+                if (row != 'D')
+                {
+                    Player.Get().AnswerWrong();
+                }
+                else
+                {
+                    Player.Get().AnswerCorrent();
+                }
+            }
+            if (question == 9)
+            {
+                var row = Player.Get().Row;
+                if (row != 'A')
+                {
+                    Player.Get().AnswerWrong();
+                }
+                else
+                {
+                    Player.Get().AnswerCorrent();
+                }
+            }
+            if (question == 10)
+            {
+                var row = Player.Get().Row;
+                if (row != 'A')
+                {
+                    Player.Get().AnswerWrong();
+                }
+                else
+                {
+                    Player.Get().AnswerCorrent();
+                }
+            }
+            if (question == 11)
+            {
+                var row = Player.Get().Row;
+                if (row != 'B')
+                {
+                    Player.Get().AnswerWrong();
+                }
+                else
+                {
+                    Player.Get().AnswerCorrent();
+                }
+            }
+            if (question == 12)
+            {
+                var row = Player.Get().Row;
+                if (row != 'B')
+                {
+                    Player.Get().AnswerWrong();
+                }
+                else
+                {
+                    Player.Get().AnswerCorrent();
+                }
+            }
+            if (question == 13)
+            {
+                var row = Player.Get().Row;
+                if (row != 'A')
+                {
+                    Player.Get().AnswerWrong();
+                }
+                else
+                {
+                    Player.Get().AnswerCorrent();
+                }
+            }
+            if (question == 14)
             {
                 var row = Player.Get().Row;
                 if (row != 'B')

@@ -923,34 +923,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!1 &287225571
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 287225572}
-  m_Layer: 0
-  m_Name: TriviaController
-  m_TagString: Untagged
-  m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &287225572
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 287225571}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.78, y: 4.51, z: -11.400756}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &291787222
 GameObject:
   m_ObjectHideFlags: 0
@@ -1269,7 +1241,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &803124890
 MonoBehaviour:
@@ -1503,7 +1475,7 @@ Transform:
   - {fileID: 216659430}
   - {fileID: 506707264}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &997655736
 GameObject:
@@ -1758,6 +1730,52 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 98b31f041c24849468b1036060bc1c09, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1222999591
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1222999592}
+  - component: {fileID: 1222999593}
+  m_Layer: 0
+  m_Name: BuildingSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1222999592
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1222999591}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 7.49, y: 0.54, z: -18.884766}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1222999593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1222999591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8a6d999ee7eafb4e811a4084ac26b66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Buildings:
+  - {fileID: 1291681832677594, guid: 2728040096bd7d744a23c7f3518c61bc, type: 2}
+  - {fileID: 1059279127426968, guid: 086418ceeb0d55c48a731eda2182c931, type: 2}
+  buildingAmount: 2
+  WaitForNextMax: 3
+  CountDown: 0
 --- !u!1001 &1244227122
 Prefab:
   m_ObjectHideFlags: 0
@@ -2146,6 +2164,17 @@ MonoBehaviour:
   - {fileID: 1410236995611582, guid: b90d1a38a4194fb429a0e66991367fc9, type: 2}
   - {fileID: 1015867839700208, guid: 1740272765002484686476053b75d877, type: 2}
   - {fileID: 1401845725802106, guid: 337ccaa357a94954baceb89488d96975, type: 2}
+  - {fileID: 1459459630156516, guid: e3939e4016b50e44fb526e9d3caeaba4, type: 2}
+  - {fileID: 1183006398473774, guid: 374eaf3245714c04484b392793e607b9, type: 2}
+  - {fileID: 1448184318393068, guid: e62bac4efb5d0ed48936cb3ea96f4aa3, type: 2}
+  - {fileID: 1147993342109262, guid: cfcb8ff5dc1bf6d4eacbf3d177d2ba0b, type: 2}
+  - {fileID: 1808097641270698, guid: 9b9432d55b777ef46b00f65159c85a8c, type: 2}
+  - {fileID: 1600458252154298, guid: 6d74271cf4ae9134aacd7b003ab7b1cd, type: 2}
+  - {fileID: 1539857665468146, guid: 6ecf15cfb4e5c594794537ac78902cf0, type: 2}
+  - {fileID: 1127633643125884, guid: 3b5f83f5d08ada543a7a27fbd6a22080, type: 2}
+  - {fileID: 1589813210782708, guid: 0530c1cb11c0f5847909f812b6106e7e, type: 2}
+  - {fileID: 1715946319787314, guid: 87c3b8b5dc88282429a8a373c0243585, type: 2}
+  - {fileID: 1479932399267662, guid: bd6d7065fbd378044a46805f248f9e7f, type: 2}
   questionPool: []
   WaitForNextMax: 30
   CountDown: 5
@@ -2401,7 +2430,7 @@ Transform:
   - {fileID: 1268880207}
   - {fileID: 1415817139}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1827363562
 GameObject:

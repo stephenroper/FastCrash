@@ -15,8 +15,6 @@ public class RockSpawner : MonoBehaviour {
     public float WaitForNextMax;
     public float CountDown;
 
-    private Vector3 _pos;
-
     private Tools _tools;
 
     private Transform _spawnerTransform;
