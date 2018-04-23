@@ -1,5 +1,4 @@
 ﻿using Assets.Scripts;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -29,6 +28,14 @@ public class TriviaSpawner : MonoBehaviour {
     private TextMesh _questionOutOfText = null;
     private int _questionOutOf;
 
+    [SerializeField]
+    private GameObject Lights;
+    private Animator _lightsAnim;
+    private bool startLightTime = false;
+    private float _blinkTimer = 3f;
+    private bool _canGreenBlink = false;
+    private bool _canRedBlink = false;
+
     private void Awake()
     {
         Singleton = this;
@@ -36,6 +43,7 @@ public class TriviaSpawner : MonoBehaviour {
 
     void Start () {
         _tools = new Tools();
+        _lightsAnim = Lights.GetComponent<Animator>();
         questionPool = new List<GameObject>();
         _spawnerTransform = GetComponent<Transform>();
         _questionOutOf = 0;
@@ -70,6 +78,30 @@ public class TriviaSpawner : MonoBehaviour {
             VerifyAnswer(questionNum);
             questionTimer = WaitforNextQuestion;
         }
+        if (startLightTime)
+        {
+            _blinkTimer -= Time.deltaTime;
+            if (_canGreenBlink)
+            {
+                _lightsAnim.Play("day4lightgreen");
+                if (_blinkTimer <= 0)
+                {
+                    _lightsAnim.Play("StillGreen");
+                }
+            }
+            else if (_canRedBlink)
+            {
+                _lightsAnim.Play("Day4RedLights");
+                if (_blinkTimer <= 0)
+                {
+                    _lightsAnim.Play("StillGreen");
+                }
+            }
+            else
+            {
+                _lightsAnim.Play("StillGreen");
+            }
+        }
 
         //Go to End Scene
         if (_questionOutOf > 10)
@@ -84,184 +116,124 @@ public class TriviaSpawner : MonoBehaviour {
         {
             if (question == 0)
             {
-                var row = Player.Get().Row;
-                if (row != 'A')
-                {
-                    Player.Get().AnswerWrong();
-                }
-                else
-                {
-                    Player.Get().AnswerCorrent();
-                }
+                VerifyAnswerA();
             }
             if (question == 1)
             {
-                var row = Player.Get().Row;
-                if (row != 'C')
-                {
-                    Player.Get().AnswerWrong();
-                }
-                else
-                {
-                    Player.Get().AnswerCorrent();
-                }
+                VerifyAnswerC();
             }
             if (question == 2)
             {
-                var row = Player.Get().Row;
-                if (row != 'D')
-                {
-                    Player.Get().AnswerWrong();
-                }
-                else
-                {
-                    Player.Get().AnswerCorrent();
-                } 
+                VerifyAnswerD();
             }
             if (question == 3)
             {
-                var row = Player.Get().Row;
-                if (row != 'B')
-                {
-                    Player.Get().AnswerWrong();
-                }
-                else
-                {
-                    Player.Get().AnswerCorrent();
-                }
+                VerifyAnswerB();
             }
             if (question == 4)
             {
-                var row = Player.Get().Row;
-                if (row != 'C')
-                {
-                    Player.Get().AnswerWrong();
-                }
-                else
-                {
-                    Player.Get().AnswerCorrent();
-                }
+                VerifyAnswerC();
             }
             if (question == 5)
             {
-                var row = Player.Get().Row;
-                if (row != 'B')
-                {
-                    Player.Get().AnswerWrong();
-                }
-                else
-                {
-                    Player.Get().AnswerCorrent();
-                }
+                VerifyAnswerB();
             }
             if (question == 6)
             {
-                var row = Player.Get().Row;
-                if (row != 'C')
-                {
-                    Player.Get().AnswerWrong();
-                }
-                else
-                {
-                    Player.Get().AnswerCorrent();
-                }
+                VerifyAnswerC();
             }
             if (question == 7)
             {
-                var row = Player.Get().Row;
-                if (row != 'A')
-                {
-                    Player.Get().AnswerWrong();
-                }
-                else
-                {
-                    Player.Get().AnswerCorrent();
-                }
+                VerifyAnswerA();
             }
             if (question == 8)
             {
-                var row = Player.Get().Row;
-                if (row != 'D')
-                {
-                    Player.Get().AnswerWrong();
-                }
-                else
-                {
-                    Player.Get().AnswerCorrent();
-                }
+                VerifyAnswerD();
             }
             if (question == 9)
             {
-                var row = Player.Get().Row;
-                if (row != 'A')
-                {
-                    Player.Get().AnswerWrong();
-                }
-                else
-                {
-                    Player.Get().AnswerCorrent();
-                }
+                VerifyAnswerA();
             }
             if (question == 10)
             {
-                var row = Player.Get().Row;
-                if (row != 'A')
-                {
-                    Player.Get().AnswerWrong();
-                }
-                else
-                {
-                    Player.Get().AnswerCorrent();
-                }
+                VerifyAnswerA();
             }
             if (question == 11)
             {
-                var row = Player.Get().Row;
-                if (row != 'B')
-                {
-                    Player.Get().AnswerWrong();
-                }
-                else
-                {
-                    Player.Get().AnswerCorrent();
-                }
+                VerifyAnswerB();
             }
             if (question == 12)
             {
-                var row = Player.Get().Row;
-                if (row != 'B')
-                {
-                    Player.Get().AnswerWrong();
-                }
-                else
-                {
-                    Player.Get().AnswerCorrent();
-                }
+                VerifyAnswerB();
             }
             if (question == 13)
             {
-                var row = Player.Get().Row;
-                if (row != 'A')
-                {
-                    Player.Get().AnswerWrong();
-                }
-                else
-                {
-                    Player.Get().AnswerCorrent();
-                }
+                VerifyAnswerA();
             }
             if (question == 14)
             {
-                var row = Player.Get().Row;
-                if (row != 'B')
-                {
-                    Player.Get().AnswerWrong();
-                }
-                else
-                {
-                    Player.Get().AnswerCorrent();
-                }
+                VerifyAnswerB();
             }
+        }
+    }
+
+    private void VerifyAnswerA()
+    {
+        var row = Player.Get().Row;
+        if (row != 'A')
+        {
+            Player.Get().AnswerWrong();
+            _canRedBlink = true;
+        }
+        else
+        {
+            Player.Get().AnswerCorrent();
+            _canGreenBlink = true;
+        }
+    }
+
+    private void VerifyAnswerB()
+    {
+        var row = Player.Get().Row;
+        if (row != 'B')
+        {
+            Player.Get().AnswerWrong();
+            _canRedBlink = true;
+        }
+        else
+        {
+            Player.Get().AnswerCorrent();
+            _canGreenBlink = true;
+        }
+    }
+
+    private void VerifyAnswerC()
+    {
+        var row = Player.Get().Row;
+        if (row != 'C')
+        {
+            Player.Get().AnswerWrong();
+            _canRedBlink = true;
+        }
+        else
+        {
+            Player.Get().AnswerCorrent();
+            _canGreenBlink = true;
+        }
+    }
+
+    private void VerifyAnswerD()
+    {
+        var row = Player.Get().Row;
+        if (row != 'D')
+        {
+            Player.Get().AnswerWrong();
+            _canRedBlink = true;
+        }
+        else
+        {
+            Player.Get().AnswerCorrent();
+            _canGreenBlink = true;
         }
     }
 }
