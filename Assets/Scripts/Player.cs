@@ -4,13 +4,12 @@ using UnityEngine;
 
 public class Player : MonoBehaviour {
 
-    private static Player Singleton;
-    static public Player Get() { return Singleton; }
+    static private Player _singleton;
+    static public Player Get() { return _singleton; }
     public Transform _playerTransform;
+    private Animator _anim;
 
     private Tools _tools;
-
-    private Player _player = null;
 
     public float HorizontalSpeed;
     public float VerticalSpeed;
@@ -22,6 +21,7 @@ public class Player : MonoBehaviour {
 
     private bool _keyUp() { return (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow)); }
     private bool _keyDown() { return (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow)); }
+    private float _LeftRight() { return Input.GetAxis("Horizontal"); }
     private bool _keyShoot() { return Input.GetKeyDown(KeyCode.Space); }
 
     public Transform _rowA;
@@ -68,10 +68,14 @@ public class Player : MonoBehaviour {
     {
         _score -= 200;
     }
+    public void RockCrashCash()
+    {
+        _score -= 50;
+    }
 
     public void Awake()
     {
-        Singleton = this;
+        _singleton = this;
     }
 
     private void Start()
@@ -79,8 +83,8 @@ public class Player : MonoBehaviour {
         _score = 100;
         _playerTransform = GetComponent<Transform>();
         _tools = new Tools();
+        _anim = GetComponent<Animator>();
         transform.position = new Vector2(-4,_rowB.position.y);
-        Row = 'B';
 
         //Instantiate the BUllet pool at the begining of the lvl
         _bulletPool = new List<GameObject>();
@@ -93,8 +97,6 @@ public class Player : MonoBehaviour {
                 _bulletPool.Add(obj);
             }
         }
-
-        _player = Player.Get();
     }
 
     private void FixedUpdate()
@@ -220,6 +222,7 @@ public class Player : MonoBehaviour {
         #endregion
 
         #region Move Left and Right
+        transform.Translate(-Vector3.left * _LeftRight() * HorizontalSpeed * Time.deltaTime);
         if (transform.position.x <= _leftStop)
         {
             _playerTransform.position = new Vector2(_leftStop, _playerTransform.position.y);
@@ -228,8 +231,22 @@ public class Player : MonoBehaviour {
         {
             _playerTransform.position = new Vector2(_rightStop, _playerTransform.position.y);
         }
-        transform.Translate(-Vector3.left * Input.GetAxis("Horizontal") * HorizontalSpeed * Time.deltaTime);
         #endregion
+
+        //Animations
+        if (_keyDown())
+        {
+            _anim.Play("PlayerMoveDown_000");
+        }
+        else if (_keyUp())
+        {
+            _anim.Play("Player-MoveUp_000");
+        }
+        else
+        {
+            _anim.Play("Player-Normal_000");
+        }
+        
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

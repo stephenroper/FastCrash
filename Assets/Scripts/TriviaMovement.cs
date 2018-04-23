@@ -3,6 +3,7 @@
 public class TriviaMovement : MonoBehaviour {
     
     public float Speed;
+
     // Update is called once per frame
     void Update()
     {

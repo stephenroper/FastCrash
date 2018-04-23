@@ -18,6 +18,15 @@ public class RockMovement : MonoBehaviour {
     {
         if (collision.gameObject.tag == "Bullet")
         {
+            //Animation
+            CollisionController.Get().SpawnExploder(transform.position);
+            gameObject.SetActive(false);
+        }
+        if (collision.gameObject.tag == "Player")
+        {
+            //Animation
+            CollisionController.Get().SpawnExploder(transform.position);
+            Player.Get().RockCrashCash();
             gameObject.SetActive(false);
         }
     }

@@ -5,96 +5,130 @@ using UnityEngine;
 
 public class TriviaSpawner : MonoBehaviour {
 
+    private static TriviaSpawner Singleton;
+    static public TriviaSpawner Get() { return Singleton; }
+
     public GameObject[] Questions;
-    private List<GameObject> _questionPool;
+    public List<GameObject> questionPool;
 
     private Transform _spawnerTransform;
 
     public float WaitForNextMax;
     public float CountDown;
 
-    private Player _player;
+    public float questionTimer;
+    public float WaitforNextQuestion;
+
     private Tools _tools;
 
-    public float _quesitonTime = 5f;
-    public float _questionTimeNext;
-    private bool _startQuestionTime;
+    public int? questionNum;
 
-    private int? _questionNum;
+    [SerializeField]
+    private TextMesh _timerGui = null;
+    [SerializeField]
+    private TextMesh _questionOutOfText = null;
+    private int _questionOutOf;
+
+    private void Awake()
+    {
+        Singleton = this;
+    }
 
     void Start () {
         _tools = new Tools();
-        _player = new Player();
-        _questionPool = new List<GameObject>();
+        questionPool = new List<GameObject>();
         _spawnerTransform = GetComponent<Transform>();
-        _startQuestionTime = false;
+        _questionOutOf = 0;
         foreach (var question in Questions)
         {
             GameObject obj = Instantiate(question);
             obj.SetActive(false);
-            _questionPool.Add(obj);
+            questionPool.Add(obj);
         }
 	}
-	
-	void Update () {
+
+    private void FixedUpdate()
+    {
+       
+    }
+
+    void Update () {
 
         CountDown -= Time.deltaTime;
+        questionTimer -= Time.deltaTime;
+        _timerGui.text = Mathf.Round(questionTimer).ToString();
+        _questionOutOfText.text = _questionOutOf.ToString();
 
-        if (CountDown <= 0 && _questionPool.Count != 0)
+        if (CountDown <= 0 && questionPool.Count != 0)
         {
-            _questionNum = _tools.SpawnObjFromPoolRandomGetRangeValue(_questionPool, _spawnerTransform);
-            _startQuestionTime = true;
-        }
-
-        if (_startQuestionTime)
-        {
-            _quesitonTime -= Time.deltaTime;
-        }
-
-        if (_quesitonTime <= 0 && _questionPool.Count != 0)
-        {
-            VerifyAnswer(_questionNum);
-            _quesitonTime = _questionTimeNext;
+            questionNum = _tools.SpawnObjFromPoolRandomGetRangeValue(questionPool, _spawnerTransform);
+            _questionOutOf += 1;
             CountDown = WaitForNextMax;
-            _startQuestionTime = false;
+        }
+        if (questionTimer <= 0)
+        {
+            VerifyAnswer(questionNum);
+            questionTimer = WaitforNextQuestion;
+        }
+
+        //Go to End Scene
+        if (_questionOutOf > 10)
+        {
+            //Goto End Scene
         }
     }
 
     public void VerifyAnswer(int? question)
-    {
+    {       
         if (question != null)
         {
             if (question == 0)
             {
-                if (_player.Row != 'A')
+                var row = Player.Get().Row;
+                if (row != 'A')
                 {
-                    _player.AnswerWrong();
+                    Player.Get().AnswerWrong();
                 }
-                _player.AnswerCorrent();
+                else
+                {
+                    Player.Get().AnswerCorrent();
+                }
             }
             if (question == 1)
             {
-                if (_player.Row != 'C')
+                var row = Player.Get().Row;
+                if (row != 'C')
                 {
-                    _player.AnswerWrong();
+                    Player.Get().AnswerWrong();
                 }
-                _player.AnswerCorrent();
+                else
+                {
+                    Player.Get().AnswerCorrent();
+                }
             }
             if (question == 2)
             {
-                if (_player.Row != 'D')
+                var row = Player.Get().Row;
+                if (row != 'D')
                 {
-                    _player.AnswerWrong();
+                    Player.Get().AnswerWrong();
                 }
-                _player.AnswerCorrent();
+                else
+                {
+                    Player.Get().AnswerCorrent();
+                } 
             }
             if (question == 3)
             {
-                if (_player.Row != 'B')
+                var row = Player.Get().Row;
+                if (row != 'B')
                 {
-                    _player.AnswerWrong();
+                    Player.Get().AnswerWrong();
                 }
-                _player.AnswerCorrent();
+                else
+                {
+                    Player.Get().AnswerCorrent();
+                }
             }
         }
     }

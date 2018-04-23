@@ -36,6 +36,7 @@ namespace Assets.Scripts
                 var randRange = Random.Range(0, objPool.Count);
                 GameObject gameObj = objPool[randRange];
                 InstantiateObject(gameObj, transform);
+                objPool.RemoveAt(randRange);
                 return randRange;
             }
             return null;
