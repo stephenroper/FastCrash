@@ -46,6 +46,42 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background1
+    uniqueID: 4291627609
+    locked: 0
+  - name: Sun
+    uniqueID: 2124764831
+    locked: 0
+  - name: ForwardMountains
+    uniqueID: 3763742801
+    locked: 0
   - name: Buildings
     uniqueID: 2023870769
+    locked: 0
+  - name: Fog
+    uniqueID: 1355786109
+    locked: 0
+  - name: Trees
+    uniqueID: 4007033173
+    locked: 0
+  - name: BackRoad
+    uniqueID: 4144304509
+    locked: 0
+  - name: TopRoad
+    uniqueID: 2727442401
+    locked: 0
+  - name: Bull
+    uniqueID: 2165634009
+    locked: 0
+  - name: Player
+    uniqueID: 1706744613
+    locked: 0
+  - name: FrontofPlayer
+    uniqueID: 2668775991
+    locked: 0
+  - name: RoadFog
+    uniqueID: 308335605
+    locked: 0
+  - name: Effects
+    uniqueID: 3026230367
     locked: 0
