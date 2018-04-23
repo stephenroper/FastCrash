@@ -12,7 +12,7 @@ public class TitleMove : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         cardPos = new Vector3 (0.05f,3.01f,-5);
-        zmPos = new Vector3(-25f, .78f, -5);
+        zmPos = new Vector3(25f, .78f, -5);
         zamMac = GameObject.Find("LOGOzmgames");
 		
 	}
