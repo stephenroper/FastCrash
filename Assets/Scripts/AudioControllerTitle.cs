@@ -58,7 +58,7 @@ public class AudioControllerTitle : MonoBehaviour {
 
     IEnumerator WaitToProgress()
     {
-        yield return new WaitForSeconds(7f);
+        yield return new WaitForSeconds(8.6f);
         _select = false;
     }
 
