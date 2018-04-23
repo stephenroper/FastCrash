@@ -5,13 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class AudioControllerStory : MonoBehaviour {
 
-    public AudioSource storyMusic;
-    public AudioSource select;
+    public static AudioSource storyMusic;
+    public static AudioSource select;
 
     private float _startVolume = 0.2f;
 
-    private bool _space() { return Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.Space); }
-    private bool _select;
+    //private bool _space() { return Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.Space); }
+    //private bool _select;
 
 
     void Awake ()
@@ -20,7 +20,7 @@ public class AudioControllerStory : MonoBehaviour {
         storyMusic = audio[0];
         select = audio[1];
 
-        _select = false;
+        //_select = false;
         StartVolume();
     }
 
@@ -32,45 +32,45 @@ public class AudioControllerStory : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if ((_space() == true) && (_select == false))
-        {
-            //storyMusic.Stop();
+        //if ((_space() == true) && (_select == false))
+        //{
+        //    storyMusic.Stop();
 
-            StartCoroutine(FadeOut(storyMusic, 4f));
+        //    StartCoroutine(FadeOut(storyMusic, 4f));
 
-            select.Play();
-            _select = true;
-            StartCoroutine(WaitForNextScene());
+        //    select.Play();
+        //    _select = true;
+        //    StartCoroutine(WaitForNextScene());
 
-        }
+        //}
     }
 
-    private void StartVolume()
+    public void StartVolume()
     {
         storyMusic.volume = _startVolume;
         select.volume = _startVolume;
     }
 
-    IEnumerator WaitForNextScene()
-    {
-        Debug.Log("Entered Coroutine.");
-        yield return new WaitForSeconds(4.5f);
-        Debug.Log("Loading Scene");
-        SceneManager.LoadScene("JTest");
-    }
+    //IEnumerator WaitForNextScene()
+    //{
+    //    Debug.Log("Entered Coroutine.");
+    //    yield return new WaitForSeconds(4.5f);
+    //    Debug.Log("Loading Scene");
+    //    SceneManager.LoadScene("JTest");
+    //}
 
-    public static IEnumerator FadeOut(AudioSource audioSource, float FadeTime)
-    {
-        float startVolume = audioSource.volume;
+    //public static IEnumerator FadeOut(AudioSource audioSource, float FadeTime)
+    //{
+    //    float startVolume = audioSource.volume;
 
-        while (audioSource.volume > 0)
-        {
-            audioSource.volume -= startVolume * Time.deltaTime / FadeTime;
+    //    while (audioSource.volume > 0)
+    //    {
+    //        audioSource.volume -= startVolume * Time.deltaTime / FadeTime;
 
-            yield return null;
-        }
+    //        yield return null;
+    //    }
 
-        audioSource.Stop();
-        audioSource.volume = startVolume;
-    }
+    //    audioSource.Stop();
+    //    audioSource.volume = startVolume;
+    //}
 }
