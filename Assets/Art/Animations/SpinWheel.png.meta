@@ -1,0 +1,1264 @@
+fileFormatVersion: 2
+guid: 153b37e1c40950740a003f2950a54aa2
+timeCreated: 1524452673
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: SpinWheel
+    21300002: SpinWheel_000
+    21300004: SpinWheel_001
+    21300006: SpinWheel_002
+    21300008: SpinWheel_003
+    21300010: SpinWheel_004
+    21300012: SpinWheel_005
+    21300014: SpinWheel_006
+    21300016: SpinWheel_007
+    21300018: SpinWheel_008
+    21300020: SpinWheel_009
+    21300022: SpinWheel_010
+    21300024: SpinWheel_011
+    21300026: SpinWheel_012
+    21300028: SpinWheel_013
+    21300030: SpinWheel_014
+    21300032: SpinWheel_015
+    21300034: SpinWheel_016
+    21300036: SpinWheel_017
+    21300038: SpinWheel_018
+    21300040: SpinWheel_019
+    21300042: SpinWheel_020
+    21300044: SpinWheel_021
+    21300046: SpinWheel_022
+    21300048: SpinWheel_023
+    21300050: SpinWheel_024
+    21300052: SpinWheel_025
+    21300054: SpinWheel_026
+    21300056: SpinWheel_027
+    21300058: SpinWheel_028
+    21300060: SpinWheel_029
+    21300062: SpinWheel_030
+    21300064: SpinWheel_031
+    21300066: SpinWheel_032
+    21300068: SpinWheel_033
+    21300070: SpinWheel_034
+    21300072: SpinWheel_035
+    21300074: SpinWheel_036
+    21300076: SpinWheel_037
+    21300078: SpinWheel_038
+    21300080: SpinWheel_039
+    21300082: SpinWheel_040
+    21300084: SpinWheel_041
+    21300086: SpinWheel_042
+    21300088: SpinWheel_043
+    21300090: SpinWheel_044
+    21300092: SpinWheel_045
+    21300094: SpinWheel_046
+    21300096: SpinWheel_047
+    21300098: SpinWheel_048
+    21300100: SpinWheel_049
+    21300102: SpinWheel_050
+    21300104: SpinWheel_051
+    21300106: SpinWheel_052
+    21300108: SpinWheel_053
+    21300110: SpinWheel_054
+    21300112: SpinWheel_055
+    21300114: SpinWheel_056
+    21300116: SpinWheel_057
+    21300118: SpinWheel_058
+    21300120: SpinWheel_059
+    21300122: SpinWheel_060
+    21300124: SpinWheel_061
+    21300126: SpinWheel_062
+    21300128: SpinWheel_063
+    21300130: SpinWheel_064
+    21300132: SpinWheel_065
+    21300134: SpinWheel_066
+    21300136: SpinWheel_067
+    21300138: SpinWheel_068
+    21300140: SpinWheel_069
+    21300142: SpinWheel_070
+    21300144: SpinWheel_071
+    21300146: SpinWheel_072
+    21300148: SpinWheel_073
+    21300150: SpinWheel_074
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: iPhone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: tvOS
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Windows Store Apps
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: WebGL
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SpinWheel_000
+      rect:
+        serializedVersion: 2
+        x: 6096
+        y: 1673
+        width: 548
+        height: 604
+      alignment: 9
+      pivot: {x: 0.50547445, y: 0.54801327}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SpinWheel_001
+      rect:
+        serializedVersion: 2
+        x: 2786
+        y: 2269
+        width: 554
+        height: 607
+      alignment: 9
+      pivot: {x: 0.4963899, y: 0.5453048}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SpinWheel_002
+      rect:
+        serializedVersion: 2
+        x: 4985
+        y: 450
+        width: 548
+        height: 605
+      alignment: 9
+      pivot: {x: 0.49817517, y: 0.54710746}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SpinWheel_003
+      rect:
+        serializedVersion: 2
+        x: 1115
+        y: 2875
+        width: 554
+        height: 609
+      alignment: 9
+      pivot: {x: 0.49819493, y: 0.54351395}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SpinWheel_004
+      rect:
+        serializedVersion: 2
+        x: 2780
+        y: 3488
+        width: 557
+        height: 607
+      alignment: 9
+      pivot: {x: 0.49551168, y: 0.5453048}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SpinWheel_005
+      rect:
+        serializedVersion: 2
+        x: 5535
+        y: 450
+        width: 547
+        height: 605
+      alignment: 9
+      pivot: {x: 0.5009141, y: 0.54710746}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SpinWheel_006
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 1033
+        width: 558
+        height: 610
+      alignment: 9
+      pivot: {x: 0.5035842, y: 0.5426229}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SpinWheel_007
+      rect:
+        serializedVersion: 2
+        x: 1112
+        y: 1648
+        width: 555
+        height: 609
+      alignment: 9
+      pivot: {x: 0.4990991, y: 0.54351395}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SpinWheel_008
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1032
+        width: 550
+        height: 611
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5417349}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SpinWheel_009
+      rect:
+        serializedVersion: 2
+        x: 3887
+        y: 1664
+        width: 553
+        height: 606
+      alignment: 9
+      pivot: {x: 0.49909583, y: 0.5462046}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SpinWheel_010
+      rect:
+        serializedVersion: 2
+        x: 3342
+        y: 2880
+        width: 556
+        height: 606
+      alignment: 9
+      pivot: {x: 0.50179857, y: 0.5462046}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SpinWheel_011
+      rect:
+        serializedVersion: 2
+        x: 2789
+        y: 2879
+        width: 551
+        height: 607
+      alignment: 9
+      pivot: {x: 0.49909255, y: 0.5453048}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SpinWheel_012
+      rect:
+        serializedVersion: 2
+        x: 7191
+        y: 2885
+        width: 549
+        height: 604
+      alignment: 9
+      pivot: {x: 0.49908924, y: 0.54801327}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SpinWheel_013
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 419
+        width: 547
+        height: 611
+      alignment: 9
+      pivot: {x: 0.50274223, y: 0.5417349}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SpinWheel_014
+      rect:
+        serializedVersion: 2
+        x: 6638
+        y: 455
+        width: 551
+        height: 604
+      alignment: 9
+      pivot: {x: 0.4954628, y: 0.54801327}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SpinWheel_015
+      rect:
+        serializedVersion: 2
+        x: 4993
+        y: 1666
+        width: 553
+        height: 605
+      alignment: 9
+      pivot: {x: 0.5027125, y: 0.54710746}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SpinWheel_016
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 2259
+        width: 555
+        height: 610
+      alignment: 9
+      pivot: {x: 0.4972973, y: 0.5426229}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SpinWheel_017
+      rect:
+        serializedVersion: 2
+        x: 1671
+        y: 2876
+        width: 554
+        height: 608
+      alignment: 9
+      pivot: {x: 0.4963899, y: 0.5444079}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SpinWheel_018
+      rect:
+        serializedVersion: 2
+        x: 2779
+        y: 1660
+        width: 555
+        height: 607
+      alignment: 9
+      pivot: {x: 0.5045045, y: 0.5453048}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SpinWheel_019
+      rect:
+        serializedVersion: 2
+        x: 3333
+        y: 1051
+        width: 549
+        height: 607
+      alignment: 9
+      pivot: {x: 0.50455374, y: 0.5453048}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SpinWheel_020
+      rect:
+        serializedVersion: 2
+        x: 7191
+        y: 3491
+        width: 550
+        height: 604
+      alignment: 9
+      pivot: {x: 0.49818182, y: 0.54801327}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SpinWheel_021
+      rect:
+        serializedVersion: 2
+        x: 3872
+        y: 442
+        width: 548
+        height: 607
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5453048}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SpinWheel_022
+      rect:
+        serializedVersion: 2
+        x: 3339
+        y: 3488
+        width: 551
+        height: 607
+      alignment: 9
+      pivot: {x: 0.5009074, y: 0.5453048}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SpinWheel_023
+      rect:
+        serializedVersion: 2
+        x: 4453
+        y: 2273
+        width: 548
+        height: 606
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5462046}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SpinWheel_024
+      rect:
+        serializedVersion: 2
+        x: 6084
+        y: 453
+        width: 552
+        height: 604
+      alignment: 9
+      pivot: {x: 0.49456522, y: 0.54801327}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SpinWheel_025
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1645
+        width: 551
+        height: 611
+      alignment: 9
+      pivot: {x: 0.49727768, y: 0.5417349}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SpinWheel_026
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 419
+        width: 548
+        height: 611
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5417349}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SpinWheel_027
+      rect:
+        serializedVersion: 2
+        x: 2225
+        y: 1041
+        width: 553
+        height: 608
+      alignment: 9
+      pivot: {x: 0.49909583, y: 0.5444079}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SpinWheel_028
+      rect:
+        serializedVersion: 2
+        x: 2224
+        y: 3487
+        width: 554
+        height: 608
+      alignment: 9
+      pivot: {x: 0.49819493, y: 0.5444079}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SpinWheel_029
+      rect:
+        serializedVersion: 2
+        x: 1669
+        y: 1651
+        width: 555
+        height: 608
+      alignment: 9
+      pivot: {x: 0.5009009, y: 0.5444079}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SpinWheel_030
+      rect:
+        serializedVersion: 2
+        x: 3892
+        y: 3489
+        width: 555
+        height: 606
+      alignment: 9
+      pivot: {x: 0.4990991, y: 0.5462046}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SpinWheel_031
+      rect:
+        serializedVersion: 2
+        x: 2772
+        y: 431
+        width: 546
+        height: 608
+      alignment: 9
+      pivot: {x: 0.50183153, y: 0.5444079}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SpinWheel_032
+      rect:
+        serializedVersion: 2
+        x: 4433
+        y: 1056
+        width: 550
+        height: 606
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5462046}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SpinWheel_033
+      rect:
+        serializedVersion: 2
+        x: 3320
+        y: 442
+        width: 550
+        height: 607
+      alignment: 9
+      pivot: {x: 0.5018182, y: 0.5453048}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SpinWheel_034
+      rect:
+        serializedVersion: 2
+        x: 3884
+        y: 1051
+        width: 547
+        height: 607
+      alignment: 9
+      pivot: {x: 0.49908593, y: 0.5453048}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SpinWheel_035
+      rect:
+        serializedVersion: 2
+        x: 2216
+        y: 428
+        width: 554
+        height: 608
+      alignment: 9
+      pivot: {x: 0.4963899, y: 0.5444079}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SpinWheel_036
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 3485
+        width: 549
+        height: 610
+      alignment: 9
+      pivot: {x: 0.49726775, y: 0.5426229}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SpinWheel_037
+      rect:
+        serializedVersion: 2
+        x: 1655
+        y: 427
+        width: 559
+        height: 608
+      alignment: 9
+      pivot: {x: 0.49910554, y: 0.5444079}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SpinWheel_038
+      rect:
+        serializedVersion: 2
+        x: 4454
+        y: 2881
+        width: 548
+        height: 606
+      alignment: 9
+      pivot: {x: 0.5018248, y: 0.5462046}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SpinWheel_039
+      rect:
+        serializedVersion: 2
+        x: 1670
+        y: 2265
+        width: 555
+        height: 608
+      alignment: 9
+      pivot: {x: 0.5009009, y: 0.5444079}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SpinWheel_040
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3484
+        width: 556
+        height: 611
+      alignment: 9
+      pivot: {x: 0.4964029, y: 0.5417349}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SpinWheel_041
+      rect:
+        serializedVersion: 2
+        x: 3900
+        y: 2881
+        width: 552
+        height: 606
+      alignment: 9
+      pivot: {x: 0.5036232, y: 0.5462046}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SpinWheel_042
+      rect:
+        serializedVersion: 2
+        x: 1113
+        y: 1037
+        width: 551
+        height: 609
+      alignment: 9
+      pivot: {x: 0.5027223, y: 0.54351395}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SpinWheel_043
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 2872
+        width: 555
+        height: 610
+      alignment: 9
+      pivot: {x: 0.5063063, y: 0.5426229}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SpinWheel_044
+      rect:
+        serializedVersion: 2
+        x: 1113
+        y: 2261
+        width: 555
+        height: 609
+      alignment: 9
+      pivot: {x: 0.5009009, y: 0.54351395}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SpinWheel_045
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 3486
+        width: 557
+        height: 609
+      alignment: 9
+      pivot: {x: 0.50089765, y: 0.54351395}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SpinWheel_046
+      rect:
+        serializedVersion: 2
+        x: 1669
+        y: 3486
+        width: 553
+        height: 609
+      alignment: 9
+      pivot: {x: 0.50090414, y: 0.54351395}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SpinWheel_047
+      rect:
+        serializedVersion: 2
+        x: 4449
+        y: 3489
+        width: 552
+        height: 606
+      alignment: 9
+      pivot: {x: 0.4981884, y: 0.5462046}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SpinWheel_048
+      rect:
+        serializedVersion: 2
+        x: 2227
+        y: 2269
+        width: 557
+        height: 607
+      alignment: 9
+      pivot: {x: 0.49910232, y: 0.5453048}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SpinWheel_049
+      rect:
+        serializedVersion: 2
+        x: 4442
+        y: 1664
+        width: 549
+        height: 606
+      alignment: 9
+      pivot: {x: 0.5027322, y: 0.5462046}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SpinWheel_050
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2258
+        width: 553
+        height: 611
+      alignment: 9
+      pivot: {x: 0.5027125, y: 0.5417349}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SpinWheel_051
+      rect:
+        serializedVersion: 2
+        x: 5003
+        y: 3489
+        width: 547
+        height: 606
+      alignment: 9
+      pivot: {x: 0.4954296, y: 0.5462046}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SpinWheel_052
+      rect:
+        serializedVersion: 2
+        x: 4985
+        y: 1057
+        width: 554
+        height: 605
+      alignment: 9
+      pivot: {x: 0.5, y: 0.54710746}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SpinWheel_053
+      rect:
+        serializedVersion: 2
+        x: 5548
+        y: 1667
+        width: 546
+        height: 605
+      alignment: 9
+      pivot: {x: 0.496337, y: 0.54710746}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SpinWheel_054
+      rect:
+        serializedVersion: 2
+        x: 5558
+        y: 2279
+        width: 549
+        height: 604
+      alignment: 9
+      pivot: {x: 0.49908924, y: 0.54801327}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SpinWheel_055
+      rect:
+        serializedVersion: 2
+        x: 3898
+        y: 2272
+        width: 553
+        height: 606
+      alignment: 9
+      pivot: {x: 0.4954792, y: 0.5462046}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SpinWheel_056
+      rect:
+        serializedVersion: 2
+        x: 5541
+        y: 1059
+        width: 547
+        height: 605
+      alignment: 9
+      pivot: {x: 0.50274223, y: 0.54710746}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SpinWheel_057
+      rect:
+        serializedVersion: 2
+        x: 5552
+        y: 3490
+        width: 549
+        height: 605
+      alignment: 9
+      pivot: {x: 0.49908924, y: 0.54710746}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SpinWheel_058
+      rect:
+        serializedVersion: 2
+        x: 2780
+        y: 1051
+        width: 551
+        height: 607
+      alignment: 9
+      pivot: {x: 0.49909255, y: 0.5453048}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SpinWheel_059
+      rect:
+        serializedVersion: 2
+        x: 5004
+        y: 2882
+        width: 552
+        height: 605
+      alignment: 9
+      pivot: {x: 0.4981884, y: 0.54710746}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SpinWheel_060
+      rect:
+        serializedVersion: 2
+        x: 3336
+        y: 1660
+        width: 549
+        height: 607
+      alignment: 9
+      pivot: {x: 0.5027322, y: 0.5453048}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SpinWheel_061
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2871
+        width: 555
+        height: 611
+      alignment: 9
+      pivot: {x: 0.49369368, y: 0.5417349}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SpinWheel_062
+      rect:
+        serializedVersion: 2
+        x: 6090
+        y: 1061
+        width: 552
+        height: 604
+      alignment: 9
+      pivot: {x: 0.5036232, y: 0.54801327}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SpinWheel_063
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 422
+        width: 553
+        height: 609
+      alignment: 9
+      pivot: {x: 0.4972875, y: 0.54351395}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SpinWheel_064
+      rect:
+        serializedVersion: 2
+        x: 3342
+        y: 2272
+        width: 554
+        height: 606
+      alignment: 9
+      pivot: {x: 0.49819493, y: 0.5462046}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SpinWheel_065
+      rect:
+        serializedVersion: 2
+        x: 4422
+        y: 443
+        width: 561
+        height: 606
+      alignment: 9
+      pivot: {x: 0.4973262, y: 0.5462046}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SpinWheel_066
+      rect:
+        serializedVersion: 2
+        x: 2227
+        y: 2878
+        width: 560
+        height: 607
+      alignment: 9
+      pivot: {x: 0.49464285, y: 0.5453048}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SpinWheel_067
+      rect:
+        serializedVersion: 2
+        x: 5003
+        y: 2274
+        width: 553
+        height: 605
+      alignment: 9
+      pivot: {x: 0.5045208, y: 0.54710746}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SpinWheel_068
+      rect:
+        serializedVersion: 2
+        x: 2226
+        y: 1655
+        width: 551
+        height: 608
+      alignment: 9
+      pivot: {x: 0.5027223, y: 0.5444079}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SpinWheel_069
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 1646
+        width: 556
+        height: 610
+      alignment: 9
+      pivot: {x: 0.4964029, y: 0.5426229}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SpinWheel_070
+      rect:
+        serializedVersion: 2
+        x: 1666
+        y: 1038
+        width: 557
+        height: 608
+      alignment: 9
+      pivot: {x: 0.502693, y: 0.5444079}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SpinWheel_071
+      rect:
+        serializedVersion: 2
+        x: 1666
+        y: 1038
+        width: 557
+        height: 608
+      alignment: 9
+      pivot: {x: 0.502693, y: 0.5444079}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SpinWheel_072
+      rect:
+        serializedVersion: 2
+        x: 1666
+        y: 1038
+        width: 557
+        height: 608
+      alignment: 9
+      pivot: {x: 0.502693, y: 0.5444079}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SpinWheel_073
+      rect:
+        serializedVersion: 2
+        x: 1666
+        y: 1038
+        width: 557
+        height: 608
+      alignment: 9
+      pivot: {x: 0.502693, y: 0.5444079}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SpinWheel_074
+      rect:
+        serializedVersion: 2
+        x: 1666
+        y: 1038
+        width: 557
+        height: 608
+      alignment: 9
+      pivot: {x: 0.502693, y: 0.5444079}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

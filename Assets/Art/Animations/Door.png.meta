@@ -1,0 +1,589 @@
+fileFormatVersion: 2
+guid: 6e2f54d1eb3cb944ba60ee9f651ec9a3
+timeCreated: 1524454591
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Door
+    21300002: GameDoor_000
+    21300004: GameDoor_001
+    21300006: GameDoor_002
+    21300008: GameDoor_003
+    21300010: GameDoor_004
+    21300012: GameDoor_005
+    21300014: GameDoor_006
+    21300016: GameDoor_007
+    21300018: GameDoor_008
+    21300020: GameDoor_009
+    21300022: GameDoor_010
+    21300024: GameDoor_011
+    21300026: GameDoor_012
+    21300028: GameDoor_013
+    21300030: GameDoor_014
+    21300032: GameDoor_015
+    21300034: GameDoor_016
+    21300036: GameDoor_017
+    21300038: GameDoor_018
+    21300040: GameDoor_019
+    21300042: GameDoor_020
+    21300044: GameDoor_021
+    21300046: GameDoor_022
+    21300048: GameDoor_023
+    21300050: GameDoor_024
+    21300052: GameDoor_025
+    21300054: GameDoor_026
+    21300056: GameDoor_027
+    21300058: GameDoor_028
+    21300060: GameDoor_029
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GameDoor_000
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 140
+        width: 326
+        height: 184
+      alignment: 9
+      pivot: {x: 0.5, y: 1.0271739}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: GameDoor_001
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 326
+        width: 326
+        height: 185
+      alignment: 9
+      pivot: {x: 0.5, y: 0.9891892}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: GameDoor_002
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 326
+        width: 326
+        height: 185
+      alignment: 9
+      pivot: {x: 0.5, y: 0.9567568}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: GameDoor_003
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 326
+        width: 326
+        height: 185
+      alignment: 9
+      pivot: {x: 0.5, y: 0.9189189}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: GameDoor_004
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 326
+        width: 326
+        height: 185
+      alignment: 9
+      pivot: {x: 0.5, y: 0.8864865}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: GameDoor_005
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 326
+        width: 326
+        height: 185
+      alignment: 9
+      pivot: {x: 0.5, y: 0.84864867}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: GameDoor_006
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 326
+        width: 326
+        height: 185
+      alignment: 9
+      pivot: {x: 0.5, y: 0.81621623}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: GameDoor_007
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 326
+        width: 326
+        height: 185
+      alignment: 9
+      pivot: {x: 0.5, y: 0.77837837}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: GameDoor_008
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 326
+        width: 326
+        height: 185
+      alignment: 9
+      pivot: {x: 0.5, y: 0.74594593}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: GameDoor_009
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 326
+        width: 326
+        height: 185
+      alignment: 9
+      pivot: {x: 0.5, y: 0.7081081}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: GameDoor_010
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 326
+        width: 326
+        height: 185
+      alignment: 9
+      pivot: {x: 0.5, y: 0.6756757}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: GameDoor_011
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 326
+        width: 326
+        height: 185
+      alignment: 9
+      pivot: {x: 0.5, y: 0.6378378}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: GameDoor_012
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 326
+        width: 326
+        height: 185
+      alignment: 9
+      pivot: {x: 0.5, y: 0.6054054}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: GameDoor_013
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 326
+        width: 326
+        height: 185
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5675676}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: GameDoor_014
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 326
+        width: 326
+        height: 185
+      alignment: 9
+      pivot: {x: 0.5, y: 0.53513515}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: GameDoor_015
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 326
+        width: 326
+        height: 185
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4972973}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: GameDoor_016
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 326
+        width: 326
+        height: 185
+      alignment: 9
+      pivot: {x: 0.5, y: 0.45945945}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: GameDoor_017
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 326
+        width: 326
+        height: 185
+      alignment: 9
+      pivot: {x: 0.5, y: 0.42702702}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: GameDoor_018
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 326
+        width: 326
+        height: 185
+      alignment: 9
+      pivot: {x: 0.5, y: 0.38918918}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: GameDoor_019
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 326
+        width: 326
+        height: 185
+      alignment: 9
+      pivot: {x: 0.5, y: 0.35675675}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: GameDoor_020
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 326
+        width: 326
+        height: 185
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3189189}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: GameDoor_021
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 326
+        width: 326
+        height: 185
+      alignment: 9
+      pivot: {x: 0.5, y: 0.28648648}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: GameDoor_022
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 326
+        width: 326
+        height: 185
+      alignment: 9
+      pivot: {x: 0.5, y: 0.24864864}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: GameDoor_023
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 326
+        width: 326
+        height: 185
+      alignment: 9
+      pivot: {x: 0.5, y: 0.21621622}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: GameDoor_024
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 326
+        width: 326
+        height: 185
+      alignment: 9
+      pivot: {x: 0.5, y: 0.17837837}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: GameDoor_025
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 326
+        width: 326
+        height: 185
+      alignment: 9
+      pivot: {x: 0.5, y: 0.14594595}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: GameDoor_026
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 326
+        width: 326
+        height: 185
+      alignment: 9
+      pivot: {x: 0.5, y: 0.10810811}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: GameDoor_027
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 326
+        width: 326
+        height: 185
+      alignment: 9
+      pivot: {x: 0.5, y: 0.075675674}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: GameDoor_028
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 326
+        width: 326
+        height: 185
+      alignment: 9
+      pivot: {x: 0.5, y: 0.037837837}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: GameDoor_029
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 326
+        width: 326
+        height: 185
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0054054055}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

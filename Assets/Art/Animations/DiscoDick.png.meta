@@ -1,0 +1,589 @@
+fileFormatVersion: 2
+guid: b713d22e3cd6a9c4691a1d6a524851ef
+timeCreated: 1524452681
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: DiscoDick
+    21300002: DiscoDickAni_000
+    21300004: DiscoDickAni_001
+    21300006: DiscoDickAni_002
+    21300008: DiscoDickAni_003
+    21300010: DiscoDickAni_004
+    21300012: DiscoDickAni_005
+    21300014: DiscoDickAni_006
+    21300016: DiscoDickAni_007
+    21300018: DiscoDickAni_008
+    21300020: DiscoDickAni_009
+    21300022: DiscoDickAni_010
+    21300024: DiscoDickAni_011
+    21300026: DiscoDickAni_012
+    21300028: DiscoDickAni_013
+    21300030: DiscoDickAni_014
+    21300032: DiscoDickAni_015
+    21300034: DiscoDickAni_016
+    21300036: DiscoDickAni_017
+    21300038: DiscoDickAni_018
+    21300040: DiscoDickAni_019
+    21300042: DiscoDickAni_020
+    21300044: DiscoDickAni_021
+    21300046: DiscoDickAni_022
+    21300048: DiscoDickAni_023
+    21300050: DiscoDickAni_024
+    21300052: DiscoDickAni_025
+    21300054: DiscoDickAni_026
+    21300056: DiscoDickAni_027
+    21300058: DiscoDickAni_028
+    21300060: DiscoDickAni_029
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: iPhone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: tvOS
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Android
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Windows Store Apps
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: WebGL
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: DiscoDickAni_000
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1494
+        width: 405
+        height: 553
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: DiscoDickAni_001
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 939
+        width: 405
+        height: 553
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: DiscoDickAni_002
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 384
+        width: 405
+        height: 553
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: DiscoDickAni_003
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 1494
+        width: 405
+        height: 553
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: DiscoDickAni_004
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 939
+        width: 405
+        height: 553
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: DiscoDickAni_005
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 384
+        width: 405
+        height: 553
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: DiscoDickAni_006
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 1494
+        width: 405
+        height: 553
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: DiscoDickAni_007
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 939
+        width: 405
+        height: 553
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: DiscoDickAni_008
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 384
+        width: 405
+        height: 553
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: DiscoDickAni_009
+      rect:
+        serializedVersion: 2
+        x: 1222
+        y: 1494
+        width: 405
+        height: 553
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: DiscoDickAni_010
+      rect:
+        serializedVersion: 2
+        x: 1222
+        y: 939
+        width: 405
+        height: 553
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: DiscoDickAni_011
+      rect:
+        serializedVersion: 2
+        x: 1222
+        y: 384
+        width: 405
+        height: 553
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: DiscoDickAni_012
+      rect:
+        serializedVersion: 2
+        x: 2443
+        y: 384
+        width: 404
+        height: 553
+      alignment: 9
+      pivot: {x: 0.50123763, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: DiscoDickAni_013
+      rect:
+        serializedVersion: 2
+        x: 2849
+        y: 384
+        width: 404
+        height: 553
+      alignment: 9
+      pivot: {x: 0.50123763, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: DiscoDickAni_014
+      rect:
+        serializedVersion: 2
+        x: 2850
+        y: 939
+        width: 404
+        height: 553
+      alignment: 9
+      pivot: {x: 0.50123763, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: DiscoDickAni_015
+      rect:
+        serializedVersion: 2
+        x: 3255
+        y: 384
+        width: 404
+        height: 553
+      alignment: 9
+      pivot: {x: 0.50123763, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: DiscoDickAni_016
+      rect:
+        serializedVersion: 2
+        x: 3256
+        y: 939
+        width: 404
+        height: 553
+      alignment: 9
+      pivot: {x: 0.50123763, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: DiscoDickAni_017
+      rect:
+        serializedVersion: 2
+        x: 3662
+        y: 939
+        width: 404
+        height: 553
+      alignment: 9
+      pivot: {x: 0.50123763, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: DiscoDickAni_018
+      rect:
+        serializedVersion: 2
+        x: 1629
+        y: 1494
+        width: 405
+        height: 553
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: DiscoDickAni_019
+      rect:
+        serializedVersion: 2
+        x: 3661
+        y: 384
+        width: 404
+        height: 553
+      alignment: 9
+      pivot: {x: 0.49876237, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: DiscoDickAni_020
+      rect:
+        serializedVersion: 2
+        x: 1629
+        y: 939
+        width: 405
+        height: 553
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: DiscoDickAni_021
+      rect:
+        serializedVersion: 2
+        x: 1629
+        y: 384
+        width: 405
+        height: 553
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: DiscoDickAni_022
+      rect:
+        serializedVersion: 2
+        x: 2036
+        y: 1494
+        width: 405
+        height: 553
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: DiscoDickAni_023
+      rect:
+        serializedVersion: 2
+        x: 2036
+        y: 939
+        width: 405
+        height: 553
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: DiscoDickAni_024
+      rect:
+        serializedVersion: 2
+        x: 2036
+        y: 384
+        width: 405
+        height: 553
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: DiscoDickAni_025
+      rect:
+        serializedVersion: 2
+        x: 2443
+        y: 1494
+        width: 405
+        height: 553
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: DiscoDickAni_026
+      rect:
+        serializedVersion: 2
+        x: 2850
+        y: 1494
+        width: 405
+        height: 553
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: DiscoDickAni_027
+      rect:
+        serializedVersion: 2
+        x: 3257
+        y: 1494
+        width: 405
+        height: 553
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: DiscoDickAni_028
+      rect:
+        serializedVersion: 2
+        x: 3664
+        y: 1494
+        width: 405
+        height: 553
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: DiscoDickAni_029
+      rect:
+        serializedVersion: 2
+        x: 2443
+        y: 939
+        width: 405
+        height: 553
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

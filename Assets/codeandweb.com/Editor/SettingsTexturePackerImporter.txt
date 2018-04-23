@@ -1,0 +1,33 @@
+version: 2
+importPivots: 1
+tpsheetFileNames:
+- Assets/Art/Animations/BuildingsDollarSign.tpsheet
+- Assets/Art/Animations/DiscoBubble.tpsheet
+- Assets/Art/Animations/DiscoDick.tpsheet
+- Assets/Art/Animations/DiscoTalk.tpsheet
+- Assets/Art/Animations/Door.tpsheet
+- Assets/Art/Animations/Explosion.tpsheet
+- Assets/Art/Animations/PlayerMovement.tpsheet
+- Assets/Art/Animations/SpinWheel.tpsheet
+- Assets/codeandweb.com/Example/SpriteSheet/sprites.tpsheet
+textureFileNames:
+- Assets/Art/Animations/BuildingsDollarSign.png
+- Assets/Art/Animations/DiscoBubble.png
+- Assets/Art/Animations/DiscoDick.png
+- Assets/Art/Animations/DiscoTalk.png
+- Assets/Art/Animations/Door.png
+- Assets/Art/Animations/Explosion.png
+- Assets/Art/Animations/PlayerMovement.png
+- Assets/Art/Animations/SpinWheel.png
+- Assets/codeandweb.com/Example/SpriteSheet/sprites.png
+normalmapFileNames:
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- Assets/codeandweb.com/Example/SpriteSheet/sprites_n.png
+enableDebugOutput: 0

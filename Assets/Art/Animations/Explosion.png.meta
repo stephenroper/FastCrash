@@ -1,0 +1,589 @@
+fileFormatVersion: 2
+guid: 80ff8fdde2c8e4846bebf39142922cd4
+timeCreated: 1524454591
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Explosion
+    21300002: ObstacleExplosion_000
+    21300004: ObstacleExplosion_001
+    21300006: ObstacleExplosion_002
+    21300008: ObstacleExplosion_003
+    21300010: ObstacleExplosion_004
+    21300012: ObstacleExplosion_005
+    21300014: ObstacleExplosion_006
+    21300016: ObstacleExplosion_007
+    21300018: ObstacleExplosion_008
+    21300020: ObstacleExplosion_009
+    21300022: ObstacleExplosion_010
+    21300024: ObstacleExplosion_011
+    21300026: ObstacleExplosion_012
+    21300028: ObstacleExplosion_013
+    21300030: ObstacleExplosion_014
+    21300032: ObstacleExplosion_015
+    21300034: ObstacleExplosion_016
+    21300036: ObstacleExplosion_017
+    21300038: ObstacleExplosion_018
+    21300040: ObstacleExplosion_019
+    21300042: ObstacleExplosion_020
+    21300044: ObstacleExplosion_021
+    21300046: ObstacleExplosion_022
+    21300048: ObstacleExplosion_023
+    21300050: ObstacleExplosion_024
+    21300052: ObstacleExplosion_025
+    21300054: ObstacleExplosion_026
+    21300056: ObstacleExplosion_027
+    21300058: ObstacleExplosion_028
+    21300060: ObstacleExplosion_029
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ObstacleExplosion_000
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 17
+        width: 88
+        height: 84
+      alignment: 9
+      pivot: {x: 0.3693182, y: 0.61904764}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ObstacleExplosion_001
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 111
+        width: 83
+        height: 82
+      alignment: 9
+      pivot: {x: 0.40361446, y: 0.6219512}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ObstacleExplosion_002
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 20
+        width: 80
+        height: 78
+      alignment: 9
+      pivot: {x: 0.38125, y: 0.5897436}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ObstacleExplosion_003
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 228
+        width: 77
+        height: 80
+      alignment: 9
+      pivot: {x: 0.3961039, y: 0.525}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ObstacleExplosion_004
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 17
+        width: 78
+        height: 78
+      alignment: 9
+      pivot: {x: 0.3525641, y: 0.55128205}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ObstacleExplosion_005
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 334
+        width: 77
+        height: 80
+      alignment: 9
+      pivot: {x: 0.3181818, y: 0.5625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ObstacleExplosion_006
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 431
+        width: 75
+        height: 80
+      alignment: 9
+      pivot: {x: 0.35333332, y: 0.5875}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ObstacleExplosion_007
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 29
+        width: 78
+        height: 80
+      alignment: 9
+      pivot: {x: 0.39102563, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ObstacleExplosion_008
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 12
+        width: 81
+        height: 84
+      alignment: 9
+      pivot: {x: 0.40123457, y: 0.5714286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ObstacleExplosion_009
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 98
+        width: 84
+        height: 86
+      alignment: 9
+      pivot: {x: 0.43452382, y: 0.5813953}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ObstacleExplosion_010
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 103
+        width: 90
+        height: 86
+      alignment: 9
+      pivot: {x: 0.4722222, y: 0.60465115}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ObstacleExplosion_011
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 97
+        width: 89
+        height: 93
+      alignment: 9
+      pivot: {x: 0.46629214, y: 0.5913978}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ObstacleExplosion_012
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 100
+        width: 92
+        height: 93
+      alignment: 9
+      pivot: {x: 0.4728261, y: 0.56989247}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ObstacleExplosion_013
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 416
+        width: 92
+        height: 95
+      alignment: 9
+      pivot: {x: 0.49456522, y: 0.58947366}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ObstacleExplosion_014
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 310
+        width: 93
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5714286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ObstacleExplosion_015
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 195
+        width: 95
+        height: 98
+      alignment: 9
+      pivot: {x: 0.52105266, y: 0.56122446}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ObstacleExplosion_016
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 186
+        width: 90
+        height: 102
+      alignment: 9
+      pivot: {x: 0.5277778, y: 0.54901963}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ObstacleExplosion_017
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 410
+        width: 104
+        height: 101
+      alignment: 9
+      pivot: {x: 0.46634614, y: 0.5346535}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ObstacleExplosion_018
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 191
+        width: 102
+        height: 102
+      alignment: 9
+      pivot: {x: 0.47549018, y: 0.5294118}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ObstacleExplosion_019
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 192
+        width: 102
+        height: 101
+      alignment: 9
+      pivot: {x: 0.4852941, y: 0.5148515}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ObstacleExplosion_020
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 290
+        width: 102
+        height: 107
+      alignment: 9
+      pivot: {x: 0.46568626, y: 0.48598132}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ObstacleExplosion_021
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 295
+        width: 103
+        height: 105
+      alignment: 9
+      pivot: {x: 0.4514563, y: 0.4952381}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ObstacleExplosion_022
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 295
+        width: 105
+        height: 105
+      alignment: 9
+      pivot: {x: 0.47142857, y: 0.4952381}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ObstacleExplosion_023
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 402
+        width: 107
+        height: 109
+      alignment: 9
+      pivot: {x: 0.47196263, y: 0.48623854}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ObstacleExplosion_024
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 399
+        width: 108
+        height: 112
+      alignment: 9
+      pivot: {x: 0.47685185, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ObstacleExplosion_025
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 407
+        width: 1
+        height: 1
+      alignment: 9
+      pivot: {x: 56.5, y: -55}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ObstacleExplosion_026
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 407
+        width: 1
+        height: 1
+      alignment: 9
+      pivot: {x: 56.5, y: -55}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ObstacleExplosion_027
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 407
+        width: 1
+        height: 1
+      alignment: 9
+      pivot: {x: 56.5, y: -55}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ObstacleExplosion_028
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 407
+        width: 1
+        height: 1
+      alignment: 9
+      pivot: {x: 56.5, y: -55}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ObstacleExplosion_029
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 407
+        width: 1
+        height: 1
+      alignment: 9
+      pivot: {x: 56.5, y: -55}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
