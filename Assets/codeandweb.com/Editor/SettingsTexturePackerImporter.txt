@@ -2,6 +2,7 @@ version: 2
 importPivots: 1
 tpsheetFileNames:
 - Assets/Art/Animations/BuildingsDollarSign.tpsheet
+- Assets/Art/Animations/Day4Stuff.tpsheet
 - Assets/Art/Animations/DiscoBubble.tpsheet
 - Assets/Art/Animations/DiscoDick.tpsheet
 - Assets/Art/Animations/DiscoTalk.tpsheet
@@ -12,6 +13,7 @@ tpsheetFileNames:
 - Assets/codeandweb.com/Example/SpriteSheet/sprites.tpsheet
 textureFileNames:
 - Assets/Art/Animations/BuildingsDollarSign.png
+- Assets/Art/Animations/Day4Stuff.png
 - Assets/Art/Animations/DiscoBubble.png
 - Assets/Art/Animations/DiscoDick.png
 - Assets/Art/Animations/DiscoTalk.png
@@ -21,6 +23,7 @@ textureFileNames:
 - Assets/Art/Animations/SpinWheel.png
 - Assets/codeandweb.com/Example/SpriteSheet/sprites.png
 normalmapFileNames:
+- 
 - 
 - 
 - 

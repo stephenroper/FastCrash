@@ -1,0 +1,2104 @@
+fileFormatVersion: 2
+guid: 17d515cc7604039419621c169ad9ab66
+timeCreated: 1524500500
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Day4Stuff
+    21300002: green_000
+    21300004: green_001
+    21300006: green_002
+    21300008: green_003
+    21300010: green_004
+    21300012: green_005
+    21300014: green_006
+    21300016: green_007
+    21300018: green_008
+    21300020: green_009
+    21300022: green_010
+    21300024: green_011
+    21300026: green_012
+    21300028: green_013
+    21300030: green_014
+    21300032: leftmouseclickthewheel_000
+    21300034: leftmouseclickthewheel_001
+    21300036: leftmouseclickthewheel_002
+    21300038: leftmouseclickthewheel_003
+    21300040: leftmouseclickthewheel_004
+    21300042: leftmouseclickthewheel_005
+    21300044: leftmouseclickthewheel_006
+    21300046: leftmouseclickthewheel_007
+    21300048: leftmouseclickthewheel_008
+    21300050: leftmouseclickthewheel_009
+    21300052: leftmouseclickthewheel_010
+    21300054: leftmouseclickthewheel_011
+    21300056: leftmouseclickthewheel_012
+    21300058: leftmouseclickthewheel_013
+    21300060: leftmouseclickthewheel_014
+    21300062: leftmouseclicktorestart_000
+    21300064: leftmouseclicktorestart_001
+    21300066: leftmouseclicktorestart_002
+    21300068: leftmouseclicktorestart_003
+    21300070: leftmouseclicktorestart_004
+    21300072: leftmouseclicktorestart_005
+    21300074: leftmouseclicktorestart_006
+    21300076: leftmouseclicktorestart_007
+    21300078: leftmouseclicktorestart_008
+    21300080: leftmouseclicktorestart_009
+    21300082: leftmouseclicktorestart_010
+    21300084: leftmouseclicktorestart_011
+    21300086: leftmouseclicktorestart_012
+    21300088: leftmouseclicktorestart_013
+    21300090: leftmouseclicktorestart_014
+    21300092: LeftMouseTheDayumDoor_000
+    21300094: LeftMouseTheDayumDoor_001
+    21300096: LeftMouseTheDayumDoor_002
+    21300098: LeftMouseTheDayumDoor_003
+    21300100: LeftMouseTheDayumDoor_004
+    21300102: LeftMouseTheDayumDoor_005
+    21300104: LeftMouseTheDayumDoor_006
+    21300106: LeftMouseTheDayumDoor_007
+    21300108: LeftMouseTheDayumDoor_008
+    21300110: LeftMouseTheDayumDoor_009
+    21300112: LeftMouseTheDayumDoor_010
+    21300114: LeftMouseTheDayumDoor_011
+    21300116: LeftMouseTheDayumDoor_012
+    21300118: LeftMouseTheDayumDoor_013
+    21300120: LeftMouseTheDayumDoor_014
+    21300122: LeftMouseTOstart_000
+    21300124: LeftMouseTOstart_001
+    21300126: LeftMouseTOstart_002
+    21300128: LeftMouseTOstart_003
+    21300130: LeftMouseTOstart_004
+    21300132: LeftMouseTOstart_005
+    21300134: LeftMouseTOstart_006
+    21300136: LeftMouseTOstart_007
+    21300138: LeftMouseTOstart_008
+    21300140: LeftMouseTOstart_009
+    21300142: LeftMouseTOstart_010
+    21300144: LeftMouseTOstart_011
+    21300146: LeftMouseTOstart_012
+    21300148: LeftMouseTOstart_013
+    21300150: LeftMouseTOstart_014
+    21300152: red_000
+    21300154: red_001
+    21300156: red_002
+    21300158: red_003
+    21300160: red_004
+    21300162: red_005
+    21300164: red_006
+    21300166: red_007
+    21300168: red_008
+    21300170: red_009
+    21300172: red_010
+    21300174: red_011
+    21300176: red_012
+    21300178: red_013
+    21300180: red_014
+    21300182: Space2progress_000
+    21300184: Space2progress_001
+    21300186: Space2progress_002
+    21300188: Space2progress_003
+    21300190: Space2progress_004
+    21300192: Space2progress_005
+    21300194: Space2progress_006
+    21300196: Space2progress_007
+    21300198: Space2progress_008
+    21300200: Space2progress_009
+    21300202: Space2progress_010
+    21300204: Space2progress_011
+    21300206: Space2progress_012
+    21300208: Space2progress_013
+    21300210: Space2progress_014
+    21300212: Space2restart_000
+    21300214: Space2restart_001
+    21300216: Space2restart_002
+    21300218: Space2restart_003
+    21300220: Space2restart_004
+    21300222: Space2restart_005
+    21300224: Space2restart_006
+    21300226: Space2restart_007
+    21300228: Space2restart_008
+    21300230: Space2restart_009
+    21300232: Space2restart_010
+    21300234: Space2restart_011
+    21300236: Space2restart_012
+    21300238: Space2restart_013
+    21300240: Space2restart_014
+    21300242: Space2START_000
+    21300244: Space2START_001
+    21300246: Space2START_002
+    21300248: Space2START_003
+    21300250: Space2START_004
+    21300252: Space2START_005
+    21300254: Space2START_006
+    21300256: Space2START_007
+    21300258: Space2START_008
+    21300260: Space2START_009
+    21300262: Space2START_010
+    21300264: Space2START_011
+    21300266: Space2START_012
+    21300268: Space2START_013
+    21300270: Space2START_014
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: green_000
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 1992
+        width: 304
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: green_001
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 1935
+        width: 304
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: green_002
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 1878
+        width: 304
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: green_003
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 1821
+        width: 304
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: green_004
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 1764
+        width: 304
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: green_005
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 1707
+        width: 304
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: green_006
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 1992
+        width: 304
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: green_007
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 1992
+        width: 304
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: green_008
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 1992
+        width: 304
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: green_009
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 1992
+        width: 304
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: green_010
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 1992
+        width: 304
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: green_011
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 1992
+        width: 304
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: green_012
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 1992
+        width: 304
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: green_013
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 1992
+        width: 304
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: green_014
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 1992
+        width: 304
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: leftmouseclickthewheel_000
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1620
+        width: 627
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: leftmouseclickthewheel_001
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1587
+        width: 627
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: leftmouseclickthewheel_002
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1554
+        width: 627
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: leftmouseclickthewheel_003
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1521
+        width: 627
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: leftmouseclickthewheel_004
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1488
+        width: 627
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: leftmouseclickthewheel_005
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1455
+        width: 627
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: leftmouseclickthewheel_006
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1422
+        width: 627
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: leftmouseclickthewheel_007
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1389
+        width: 627
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: leftmouseclickthewheel_008
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1356
+        width: 627
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: leftmouseclickthewheel_009
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1323
+        width: 627
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: leftmouseclickthewheel_010
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1290
+        width: 627
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: leftmouseclickthewheel_011
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1257
+        width: 627
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: leftmouseclickthewheel_012
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1620
+        width: 627
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: leftmouseclickthewheel_013
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1620
+        width: 627
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: leftmouseclickthewheel_014
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1620
+        width: 627
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: leftmouseclicktorestart_000
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2016
+        width: 647
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: leftmouseclicktorestart_001
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1983
+        width: 647
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: leftmouseclicktorestart_002
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1950
+        width: 647
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: leftmouseclicktorestart_003
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1917
+        width: 647
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: leftmouseclicktorestart_004
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1884
+        width: 647
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: leftmouseclicktorestart_005
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1851
+        width: 647
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: leftmouseclicktorestart_006
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1818
+        width: 647
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: leftmouseclicktorestart_007
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1785
+        width: 647
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: leftmouseclicktorestart_008
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1752
+        width: 647
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: leftmouseclicktorestart_009
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1719
+        width: 647
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: leftmouseclicktorestart_010
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1686
+        width: 647
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: leftmouseclicktorestart_011
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1653
+        width: 647
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: leftmouseclicktorestart_012
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2016
+        width: 647
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: leftmouseclicktorestart_013
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2016
+        width: 647
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: leftmouseclicktorestart_014
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2016
+        width: 647
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: LeftMouseTheDayumDoor_000
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 811
+        width: 541
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: LeftMouseTheDayumDoor_001
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 773
+        width: 541
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: LeftMouseTheDayumDoor_002
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 735
+        width: 541
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: LeftMouseTheDayumDoor_003
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 697
+        width: 541
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: LeftMouseTheDayumDoor_004
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 659
+        width: 541
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: LeftMouseTheDayumDoor_005
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 621
+        width: 541
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: LeftMouseTheDayumDoor_006
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 583
+        width: 541
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: LeftMouseTheDayumDoor_007
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 545
+        width: 541
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: LeftMouseTheDayumDoor_008
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 507
+        width: 541
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: LeftMouseTheDayumDoor_009
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 469
+        width: 541
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: LeftMouseTheDayumDoor_010
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 431
+        width: 541
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: LeftMouseTheDayumDoor_011
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 393
+        width: 541
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: LeftMouseTheDayumDoor_012
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 811
+        width: 541
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: LeftMouseTheDayumDoor_013
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 811
+        width: 541
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: LeftMouseTheDayumDoor_014
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 811
+        width: 541
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: LeftMouseTOstart_000
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1223
+        width: 595
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: LeftMouseTOstart_001
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1189
+        width: 595
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: LeftMouseTOstart_002
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1155
+        width: 595
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: LeftMouseTOstart_003
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1121
+        width: 595
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: LeftMouseTOstart_004
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1087
+        width: 595
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: LeftMouseTOstart_005
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1053
+        width: 595
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: LeftMouseTOstart_006
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1019
+        width: 595
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: LeftMouseTOstart_007
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 985
+        width: 595
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: LeftMouseTOstart_008
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 951
+        width: 595
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: LeftMouseTOstart_009
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 917
+        width: 595
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: LeftMouseTOstart_010
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 883
+        width: 595
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: LeftMouseTOstart_011
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 849
+        width: 595
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: LeftMouseTOstart_012
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1223
+        width: 595
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: LeftMouseTOstart_013
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1223
+        width: 595
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: LeftMouseTOstart_014
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1223
+        width: 595
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: red_000
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 1650
+        width: 304
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: red_001
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 1593
+        width: 304
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: red_002
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 1536
+        width: 304
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: red_003
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 1479
+        width: 304
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: red_004
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 1422
+        width: 304
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: red_005
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 1365
+        width: 304
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: red_006
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 1308
+        width: 304
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: red_007
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 1251
+        width: 304
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: red_008
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 390
+        width: 304
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: red_009
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 129
+        width: 304
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: red_010
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 72
+        width: 304
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: red_011
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 20
+        width: 300
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.51}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: red_012
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 15
+        width: 304
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: red_013
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 129
+        width: 304
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: red_014
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 72
+        width: 304
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Space2progress_000
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 359
+        width: 503
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Space2progress_001
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 356
+        width: 503
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Space2progress_002
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 325
+        width: 503
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Space2progress_003
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 322
+        width: 503
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Space2progress_004
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 291
+        width: 503
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Space2progress_005
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 288
+        width: 503
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Space2progress_006
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 257
+        width: 503
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Space2progress_007
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 254
+        width: 503
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Space2progress_008
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 223
+        width: 503
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Space2progress_009
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 220
+        width: 503
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Space2progress_010
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 189
+        width: 503
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Space2progress_011
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 186
+        width: 503
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Space2progress_012
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 359
+        width: 503
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Space2progress_013
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 359
+        width: 503
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Space2progress_014
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 359
+        width: 503
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Space2restart_000
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 810
+        width: 475
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Space2restart_001
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 777
+        width: 475
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Space2restart_002
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 744
+        width: 475
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Space2restart_003
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 711
+        width: 475
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Space2restart_004
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 678
+        width: 475
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Space2restart_005
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 645
+        width: 475
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Space2restart_006
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 612
+        width: 475
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Space2restart_007
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 579
+        width: 475
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Space2restart_008
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 546
+        width: 475
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Space2restart_009
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 513
+        width: 475
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Space2restart_010
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 480
+        width: 475
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Space2restart_011
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 447
+        width: 475
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Space2restart_012
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 810
+        width: 475
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Space2restart_013
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 810
+        width: 475
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Space2restart_014
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 810
+        width: 475
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Space2START_000
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 1217
+        width: 423
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Space2START_001
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 1183
+        width: 423
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Space2START_002
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 1149
+        width: 423
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Space2START_003
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 1115
+        width: 423
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Space2START_004
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 1081
+        width: 423
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Space2START_005
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 1047
+        width: 423
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Space2START_006
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 1013
+        width: 423
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Space2START_007
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 979
+        width: 423
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Space2START_008
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 945
+        width: 423
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Space2START_009
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 911
+        width: 423
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Space2START_010
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 877
+        width: 423
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Space2START_011
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 843
+        width: 423
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Space2START_012
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 1217
+        width: 423
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Space2START_013
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 1217
+        width: 423
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Space2START_014
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 1217
+        width: 423
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
