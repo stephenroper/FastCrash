@@ -8,7 +8,8 @@ public class AudioControllerStory : MonoBehaviour {
     public static AudioSource storyMusic;
     public static AudioSource select;
 
-    private float _startVolume = 0.2f;
+    private float _startVolume = 0.5f;
+
 
     //private bool _space() { return Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.Space); }
     //private bool _select;
@@ -16,6 +17,8 @@ public class AudioControllerStory : MonoBehaviour {
 
     void Awake ()
     {
+        DontDestroyOnLoad(this.gameObject);
+
         AudioSource[] audio = GetComponents<AudioSource>();
         storyMusic = audio[0];
         select = audio[1];
@@ -27,7 +30,10 @@ public class AudioControllerStory : MonoBehaviour {
     // Use this for initialization
     void Start () {
 
-        storyMusic.Play();
+        if (!storyMusic.isPlaying)
+        {
+            storyMusic.Play();
+        }
     }
 	
 	// Update is called once per frame

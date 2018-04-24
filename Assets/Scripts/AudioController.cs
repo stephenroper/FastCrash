@@ -14,6 +14,8 @@ public class AudioController : MonoBehaviour {
     public static AudioSource incorrect;
     public static AudioSource pickup;
 
+    public GameObject storyController;
+
     private float _startVolume;
     private float _rng;
 
@@ -21,12 +23,12 @@ public class AudioController : MonoBehaviour {
 
     void Awake ()
     {
-        if (GameObject.Find("StoryController") != null)
+        storyController = GameObject.Find("StoryController");
+
+        if (storyController != null)
         {
-            if (AudioControllerStory.storyMusic.isPlaying == true)
-            {
-                AudioControllerStory.storyMusic.Stop();
-            }
+            AudioControllerStory.storyMusic.Stop();
+            Destroy(storyController);
         }
 
 
