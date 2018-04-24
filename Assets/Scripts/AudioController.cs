@@ -44,7 +44,7 @@ public class AudioController : MonoBehaviour {
         pickup = audio[8];
 
         _startVolume = 0.3f;
-        drivingMusic.volume = 0.6f;
+        drivingMusic.volume = 0.65f;
         StartVolume();
         drivingMusic.loop = true;
     }
