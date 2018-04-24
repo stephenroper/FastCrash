@@ -21,6 +21,15 @@ public class AudioController : MonoBehaviour {
 
     void Awake ()
     {
+        if (GameObject.Find("StoryController") != null)
+        {
+            if (AudioControllerStory.storyMusic.isPlaying == true)
+            {
+                AudioControllerStory.storyMusic.Stop();
+            }
+        }
+
+
         AudioSource[] audio = GetComponents<AudioSource>();
         shoot1 = audio[0];
         shoot2 = audio[1];
