@@ -1,6 +1,7 @@
 ﻿using Assets.Scripts;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TriviaSpawner : MonoBehaviour {
 
@@ -107,6 +108,7 @@ public class TriviaSpawner : MonoBehaviour {
         if (_questionOutOf > 10)
         {
             //Goto End Scene
+            SceneManager.LoadScene("End");
         }
     }
 
