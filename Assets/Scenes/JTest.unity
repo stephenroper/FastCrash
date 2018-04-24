@@ -1438,6 +1438,7 @@ MonoBehaviour:
   drivingMusic: {fileID: 0}
   shoot2: {fileID: 0}
   shoot3: {fileID: 0}
+  storyController: {fileID: 0}
 --- !u!4 &226827989
 Transform:
   m_ObjectHideFlags: 0
