@@ -5,13 +5,14 @@ using UnityEngine;
 public class AudioController : MonoBehaviour {
 
     public AudioSource drivingMusic;
-    public AudioSource shoot1;
+    public static AudioSource shoot1;
     public AudioSource shoot2;
     public AudioSource shoot3;
-    public AudioSource hitEnemy;
-    public AudioSource crash;
-    public AudioSource correct;
-    public AudioSource incorrect;
+    public static AudioSource hitEnemy;
+    public static AudioSource crash;
+    public static AudioSource correct;
+    public static AudioSource incorrect;
+    public static AudioSource pickup;
 
     private float _startVolume;
     private float _rng;
@@ -29,16 +30,17 @@ public class AudioController : MonoBehaviour {
         correct = audio[5];
         incorrect = audio[6];
         drivingMusic = audio[7];
+        pickup = audio[8];
 
-        _startVolume = 0.2f;
-        drivingMusic.volume = 0.2f;
+        _startVolume = 0.3f;
+        drivingMusic.volume = 0.6f;
         StartVolume();
         drivingMusic.loop = true;
     }
 
     // Use this for initialization
     void Start () {
-        //drivingMusic.Play();
+        drivingMusic.Play();
 	}
 	
 	// Update is called once per frame
@@ -71,7 +73,7 @@ public class AudioController : MonoBehaviour {
         crash.volume = _startVolume;
         correct.volume =  _startVolume;
         incorrect.volume = _startVolume;
-        drivingMusic.volume = _startVolume;
+        pickup.volume = _startVolume;
 
     }
 }

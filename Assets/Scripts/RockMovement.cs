@@ -21,6 +21,7 @@ public class RockMovement : MonoBehaviour {
             //Animation
             CollisionController.Get().SpawnExploder(transform.position);
             gameObject.SetActive(false);
+            AudioController.hitEnemy.Play();
         }
         if (collision.gameObject.tag == "Player")
         {

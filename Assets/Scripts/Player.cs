@@ -55,6 +55,7 @@ public class Player : MonoBehaviour {
     public void PickUpCash()
     {
         _score += 100;
+        AudioController.pickup.Play();
     }
     public void FireLaserCash()
     {
@@ -63,14 +64,17 @@ public class Player : MonoBehaviour {
     public void AnswerCorrent()
     {
         _score += 200;
+        AudioController.correct.Play();
     }
     public void AnswerWrong()
     {
         _score -= 200;
+        AudioController.incorrect.Play();
     }
     public void RockCrashCash()
     {
         _score -= 50;
+        AudioController.crash.Play();
     }
 
     public void Awake()
@@ -114,6 +118,7 @@ public class Player : MonoBehaviour {
         {
             _nextFire = Time.time + FireRate;
             _tools.SpawnObjFromPool(_bulletPool, _playerTransform);
+            AudioController.shoot1.Play();
             FireLaserCash();
         }
 
