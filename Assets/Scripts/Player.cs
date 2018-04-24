@@ -76,6 +76,10 @@ public class Player : MonoBehaviour {
         _score -= 50;
         AudioController.crash.Play();
     }
+    public void ReSetScore()
+    {
+        _score = 100;
+    }
 
     public void Awake()
     {
@@ -259,5 +263,10 @@ public class Player : MonoBehaviour {
         {
             PickUpCash();
         }
+    }
+
+    private void OnDisable()
+    {
+        PlayerPrefs.SetInt("highscore", _score);
     }
 }
