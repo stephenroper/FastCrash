@@ -9,6 +9,7 @@ TagManager:
   - Bullet
   - Cash
   - Building1
+  - Door
   layers:
   - Default
   - TransparentFX
@@ -84,4 +85,10 @@ TagManager:
     locked: 0
   - name: Effects
     uniqueID: 3026230367
+    locked: 0
+  - name: newfront
+    uniqueID: 811684573
+    locked: 0
+  - name: even more front
+    uniqueID: 365915905
     locked: 0
