@@ -11,7 +11,7 @@ public class AudioControllerTitle : MonoBehaviour {
     public AudioSource titleMusic;
     public AudioSource select;
 
-    private float _startVolume = 0.2f;
+    private float _startVolume = 0.55f;
 
     private bool _space() { return Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.Space); }
     private bool _select;
