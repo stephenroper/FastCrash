@@ -25,6 +25,7 @@ public class AudioControllerStory : MonoBehaviour {
 
         //_select = false;
         StartVolume();
+        storyMusic.loop = true;
     }
 
     // Use this for initialization
