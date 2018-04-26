@@ -13,7 +13,8 @@ public class Player : MonoBehaviour {
     //Score Lights
     [SerializeField]
     private GameObject _lights;
-    private bool _lightTrigger = false;
+    private bool _redTrigger = false;
+    private bool _greenTrigger = false;
 
     private Tools _tools;
 
@@ -61,6 +62,7 @@ public class Player : MonoBehaviour {
     public void PickUpCash()
     {
         _score += 100;
+        _greenTrigger = true;
         AudioController.pickup.Play();
     }
     public void FireLaserCash()
@@ -70,17 +72,19 @@ public class Player : MonoBehaviour {
     public void AnswerCorrent()
     {
         _score += 200;
+        _greenTrigger = true;
         AudioController.correct.Play();
     }
     public void AnswerWrong()
     {
         _score -= 200;
-        _lightTrigger = true;
+        _redTrigger = true;
         AudioController.incorrect.Play();
     }
     public void RockCrashCash()
     {
         _score -= 50;
+        _redTrigger = true;
         AudioController.crash.Play();
     }
     public void ReSetScore()
@@ -122,11 +126,15 @@ public class Player : MonoBehaviour {
     // Update is called once per frame
     void Update () {
         //Light trigger;
-        if (_lightTrigger)
+        if (_redTrigger)
         {         
-            StartCoroutine(WaitTime());
+            StartCoroutine(RedLight());
         }
-        if (!_lightTrigger)
+        //if (_greenTrigger)
+        //{
+        //    StartCoroutine(GreenLight());
+        //}
+        if (!_redTrigger)
         {
             _lights.GetComponent<Animator>().SetBool("isWrong", false);
         }
@@ -286,10 +294,18 @@ public class Player : MonoBehaviour {
         PlayerPrefs.SetInt("highscore", _score);
     }
 
-    IEnumerator WaitTime()
+    IEnumerator RedLight()
     {
         _lights.GetComponent<Animator>().SetBool("isWrong", true);
-        yield return new WaitForSeconds(3);
-        _lightTrigger = false;
+        yield return new WaitForSeconds(2);
+        _lights.GetComponent<Animator>().SetBool("isWrong", false);
+        _redTrigger = false;
+    }
+
+    IEnumerator GreenLight()
+    {
+        _lights.GetComponent<Animator>().SetBool("isRight", true);
+        yield return new WaitForSeconds(2);
+        _greenTrigger = false;
     }
 }
