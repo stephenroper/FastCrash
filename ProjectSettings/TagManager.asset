@@ -92,3 +92,6 @@ TagManager:
   - name: even more front
     uniqueID: 365915905
     locked: 0
+  - name: Filter Layer
+    uniqueID: 3929303191
+    locked: 0
