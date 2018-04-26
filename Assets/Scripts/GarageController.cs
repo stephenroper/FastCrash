@@ -17,7 +17,7 @@ public class GarageController : MonoBehaviour {
     //public Transform door3Target;
 
 
-    private float speed = .75f;
+    private float speed = 20f;
 
     string clickedDoor;
 
