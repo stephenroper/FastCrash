@@ -29,7 +29,7 @@ namespace Assets.Scripts
             }
         }
 
-        public int? SpawnObjFromPoolRandomGetRangeValue(List<GameObject> objPool, Transform transform)
+        public string SpawnObjFromPoolRandomGetRangeValue(List<GameObject> objPool, Transform transform)
         {
             if (objPool != null)
             {
@@ -37,7 +37,7 @@ namespace Assets.Scripts
                 GameObject gameObj = objPool[randRange];
                 InstantiateObject(gameObj, transform);
                 objPool.RemoveAt(randRange);
-                return randRange;
+                return gameObj.name;
             }
             return null;
         }

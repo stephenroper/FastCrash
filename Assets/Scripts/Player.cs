@@ -1,4 +1,5 @@
 ﻿using Assets.Scripts;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,6 +9,11 @@ public class Player : MonoBehaviour {
     static public Player Get() { return _singleton; }
     public Transform _playerTransform;
     private Animator _anim;
+
+    //Score Lights
+    [SerializeField]
+    private GameObject _lights;
+    private bool _lightTrigger = false;
 
     private Tools _tools;
 
@@ -69,6 +75,7 @@ public class Player : MonoBehaviour {
     public void AnswerWrong()
     {
         _score -= 200;
+        _lightTrigger = true;
         AudioController.incorrect.Play();
     }
     public void RockCrashCash()
@@ -114,8 +121,19 @@ public class Player : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
+        //Light trigger;
+        if (_lightTrigger)
+        {         
+            StartCoroutine(WaitTime());
+        }
+        if (!_lightTrigger)
+        {
+            _lights.GetComponent<Animator>().SetBool("isWrong", false);
+        }
+
         _step = VerticalSpeed * Time.deltaTime;
         UPdatePlayer();
+        DeterminePlayerPosition();
 
         //Set active BUllet and Fire.
         if (_keyShoot() && (Time.time > _nextFire) && _score >= 25)
@@ -125,8 +143,6 @@ public class Player : MonoBehaviour {
             AudioController.shoot1.Play();
             FireLaserCash();
         }
-
-        DeterminePlayerPosition();
 
         if (_score <= 0)
         {
@@ -243,11 +259,11 @@ public class Player : MonoBehaviour {
         #endregion
 
         //Animations
-        if (_keyDown())
+        if (_keyDown() && !_keyUp())
         {
             _anim.Play("PlayerDown");
         }
-        else if (_keyUp())
+        else if (_keyUp() && !_keyDown())
         {
             _anim.Play("PlayerUp");
         }
@@ -268,5 +284,12 @@ public class Player : MonoBehaviour {
     private void OnDisable()
     {
         PlayerPrefs.SetInt("highscore", _score);
+    }
+
+    IEnumerator WaitTime()
+    {
+        _lights.GetComponent<Animator>().SetBool("isWrong", true);
+        yield return new WaitForSeconds(3);
+        _lightTrigger = false;
     }
 }

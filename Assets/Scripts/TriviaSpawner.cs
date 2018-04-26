@@ -21,7 +21,7 @@ public class TriviaSpawner : MonoBehaviour {
 
     private Tools _tools;
 
-    public int? questionNum;
+    public string _question;
 
     [SerializeField]
     private TextMesh _timerGui = null;
@@ -65,43 +65,33 @@ public class TriviaSpawner : MonoBehaviour {
 
         CountDown -= Time.deltaTime;
         questionTimer -= Time.deltaTime;
-        _timerGui.text = Mathf.Round(questionTimer).ToString();
         _questionOutOfText.text = _questionOutOf.ToString();
 
-        if (CountDown <= 0 && questionPool.Count != 0 && _questionOutOf <= 10)
+
+        if (questionTimer >= 20f)
+        {
+            _timerGui.text = 20f.ToString();
+        }
+        else if (questionTimer <= 0)
+        {
+            _timerGui.text = 0f.ToString();
+        }
+        else
+        {
+            _timerGui.text = Mathf.Round(questionTimer).ToString();
+        }      
+
+        if (CountDown <= 0 && questionPool.Count != 0 && _questionOutOf <= 10 )
         {
             _questionOutOf += 1;
-            questionNum = _tools.SpawnObjFromPoolRandomGetRangeValue(questionPool, _spawnerTransform);           
+            _question = _tools.SpawnObjFromPoolRandomGetRangeValue(questionPool, _spawnerTransform);
             CountDown = WaitForNextMax;
         }
+
         if (questionTimer <= 0)
         {
-            VerifyAnswer(questionNum);
+            VerifyAnswer(_question);
             questionTimer = WaitforNextQuestion;
-        }
-        if (startLightTime)
-        {
-            _blinkTimer -= Time.deltaTime;
-            if (_canGreenBlink)
-            {
-                _lightsAnim.Play("day4lightgreen");
-                if (_blinkTimer <= 0)
-                {
-                    _lightsAnim.Play("StillGreen");
-                }
-            }
-            else if (_canRedBlink)
-            {
-                _lightsAnim.Play("Day4RedLights");
-                if (_blinkTimer <= 0)
-                {
-                    _lightsAnim.Play("StillGreen");
-                }
-            }
-            else
-            {
-                _lightsAnim.Play("StillGreen");
-            }
         }
 
         //Go to End Scene
@@ -112,67 +102,67 @@ public class TriviaSpawner : MonoBehaviour {
         }
     }
 
-    public void VerifyAnswer(int? question)
+    public void VerifyAnswer(string question)
     {       
         if (question != null)
         {
-            if (question == 0)
+            if (question.Contains("Trivia01"))
             {
                 VerifyAnswerA();
             }
-            if (question == 1)
+            if (question.Contains("Trivia02"))
             {
                 VerifyAnswerC();
             }
-            if (question == 2)
+            if (question.Contains("Trivia03"))
             {
                 VerifyAnswerD();
             }
-            if (question == 3)
+            if (question.Contains("Trivia04"))
             {
                 VerifyAnswerB();
             }
-            if (question == 4)
+            if (question.Contains("Trivia05"))
             {
                 VerifyAnswerC();
             }
-            if (question == 5)
+            if (question.Contains("Trivia06"))
             {
                 VerifyAnswerB();
             }
-            if (question == 6)
+            if (question.Contains("Trivia07"))
             {
                 VerifyAnswerC();
             }
-            if (question == 7)
+            if (question.Contains("Trivia08"))
             {
                 VerifyAnswerA();
             }
-            if (question == 8)
+            if (question.Contains("Trivia09"))
             {
                 VerifyAnswerD();
             }
-            if (question == 9)
+            if (question.Contains("Trivia10"))
             {
                 VerifyAnswerA();
             }
-            if (question == 10)
+            if (question.Contains("Trivia11"))
             {
                 VerifyAnswerA();
             }
-            if (question == 11)
+            if (question.Contains("Trivia12"))
             {
                 VerifyAnswerB();
             }
-            if (question == 12)
+            if (question.Contains("Trivia13"))
             {
                 VerifyAnswerB();
             }
-            if (question == 13)
+            if (question.Contains("Trivia14"))
             {
                 VerifyAnswerA();
             }
-            if (question == 14)
+            if (question.Contains("Trivia15"))
             {
                 VerifyAnswerB();
             }
@@ -182,51 +172,49 @@ public class TriviaSpawner : MonoBehaviour {
     private void VerifyAnswerA()
     {
         var row = Player.Get().Row;
+        Debug.Log("PLayer is in ROw: " + row.ToString());
         if (row != 'A')
         {
             Player.Get().AnswerWrong();
-            _canRedBlink = true;
         }
         else
         {
             Player.Get().AnswerCorrent();
-            _canGreenBlink = true;
         }
     }
 
     private void VerifyAnswerB()
     {
         var row = Player.Get().Row;
+        Debug.Log("PLayer is in ROw: " + row.ToString());
         if (row != 'B')
         {
             Player.Get().AnswerWrong();
-            _canRedBlink = true;
         }
         else
         {
             Player.Get().AnswerCorrent();
-            _canGreenBlink = true;
         }
     }
 
     private void VerifyAnswerC()
     {
         var row = Player.Get().Row;
+        Debug.Log("PLayer is in ROw: " + row.ToString());
         if (row != 'C')
         {
             Player.Get().AnswerWrong();
-            _canRedBlink = true;
         }
         else
         {
             Player.Get().AnswerCorrent();
-            _canGreenBlink = true;
         }
     }
 
     private void VerifyAnswerD()
     {
         var row = Player.Get().Row;
+        Debug.Log("PLayer is in ROw: " + row.ToString());
         if (row != 'D')
         {
             Player.Get().AnswerWrong();
